@@ -1,6 +1,6 @@
 import React from "React";
 import { Link } from "gatsby"
-const Footer = (props)=>{
+const footer = (props)=>{
     var year = new Date().getFullYear();
     return(
         <footer>
@@ -9,9 +9,9 @@ const Footer = (props)=>{
                 <h1>CLUB OTAKU</h1>
                 <div className="links">
                     <div className="left">
-                        <Link to="#head">Home</Link>
-                        <Link to="/">EVENTS</Link>
-                        <Link to="/">GALLERY</Link>            
+                        <Link to="/">Home</Link>
+                        <Link to="/events">EVENTS</Link>
+                        <Link to="/gallery">GALLERY</Link>            
                     </div>
                     <div className="right">
                         <Link to="/">EVENT WINNERS</Link>
@@ -43,4 +43,4 @@ const Footer = (props)=>{
     )
 }
 
-export default Footer;
+export default footer;
