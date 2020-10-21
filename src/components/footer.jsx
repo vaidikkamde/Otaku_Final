@@ -1,6 +1,6 @@
 import React from "React";
 import { Link } from "gatsby"
-const footer = (props)=>{
+function Footer (props){
     var year = new Date().getFullYear();
     return(
         <footer>
@@ -43,4 +43,4 @@ const footer = (props)=>{
     )
 }
 
-export default footer;
+export default Footer;
