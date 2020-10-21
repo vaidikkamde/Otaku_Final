@@ -1,0 +1,36 @@
+.eventModal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    .close-btn{
+        align-self: flex-end;
+        color:red;
+        cursor: pointer;
+        padding-bottom: 2rem;
+    }
+    .modal-description{
+        width:30rem;
+    }
+}
+
+.ReactModal__Content::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 12px;
+	background-color: #F5F5F5;
+}
+
+.ReactModal__Content::-webkit-scrollbar
+{
+	width: 8px;
+    background-color: #F5F5F5;
+    padding-right: 2px;
+}
+
+.ReactModal__Content::-webkit-scrollbar-thumb
+{
+	border-radius: 12px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}

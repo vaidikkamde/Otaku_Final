@@ -1,0 +1,96 @@
+
+.about-us{
+    height: 100vh;
+    width: 100vw;
+    background: url(../images/about-us.jpg) top;
+    image-rendering: optimizeSpeed;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    .blur{
+        height: 100vh;
+        width:100vw;
+        background: transparent;
+        /* Note: currently only Safari supports backdrop-filter */
+        backdrop-filter: blur(4px);
+        --webkit-backdrop-filter: blur(4px);
+        background-color: rgba(0, 0, 0, 0.6);
+        /* (plus shape's fill blended on top as a separate layer with 26% opacity) */
+        .background-links{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            .links{
+                width: 40%;
+                h1{
+                    font-size: 7vh;
+                    width: 100%;
+                    padding-top: 25vh;
+                    font-family: $Elinato;
+                    color:$text-color;
+                    text-align: center;
+                }
+                .link_btn{
+                    display: flex;
+                    flex-direction: column;
+                    width: fit-content;
+                    text-align: center;
+                    .gallery-btn,.event-winner-btn{
+                        font-size: 4vh;
+                        font-family: $Elinato;
+                        color: $text-color;
+                        padding: 2vh;
+                        background-color: $background-color;
+                        border-radius: 30px;
+                        margin: 2vh 0;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    .gallery-btn{
+                        position: relative;
+                        top:15vh;
+                        left:1vw;
+                    }
+                    .event-winner-btn{
+                        position: relative;
+                        top: 30vh;
+                        left: 15vw;
+                    }
+
+
+                }
+            }
+            .clip-path{
+                height: 100%;
+                width: 60%;
+                clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+                background: $background-color;
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                justify-content: center;
+                h1{
+                    font-size: 10vh;
+                    font-family: $Elinato;
+                    padding: 0 0vw 3vh 5vw;
+                    color: $text-color;
+                }
+                p{
+                    width: 75%;
+                    text-align: justify;
+                    padding: 3vh 0vw 0 5vw;
+                    font-size: 3vh;
+                    color:$text-color;
+                    font-family: 'Poppins', sans-serif;
+    
+                }
+                .foreground-links{
+                    display: none;
+                }
+            }
+        }
+        
+    }
+}
