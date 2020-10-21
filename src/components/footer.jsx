@@ -1,6 +1,6 @@
 import React from "React";
 import { Link } from "gatsby"
-const MainFooter = (props)=>{
+const Footer = (props)=>{
     var year = new Date().getFullYear();
     return(
         <footer>
@@ -36,11 +36,11 @@ const MainFooter = (props)=>{
         <div className="bottom-link">
             <Link to="/">Sitemap</Link>
             <Link to="/">Privacy Policy</Link>
-            <a href="http://" target="_blank" rel="noopener noreferrer" className="copyright-pc">&#169; 2020 Student Organization Otaku</a>
+            <div className="copyright-pc">&#169; 2020 Student Organization Otaku</div>
         </div>
-        <a href="http://" target="_blank" rel="noopener noreferrer" className="copyright-mobile">&#169; {year} Student Organization Otaku</a>
+        <div className="copyright-mobile">&#169; {year} Student Organization Otaku</div>
     </footer>
     )
 }
 
-export default MainFooter;
+export default Footer;
