@@ -21,8 +21,133 @@
       width: 1570px;
     }
   }
-  @media screen and (min-width: 1900px) {
-      footer{
+  @media screen and (min-width:1900px){
+    nav{
+        height:6rem;
+        ul{
+            li{
+                line-height: 6rem;
+                a{
+                  font-size: 2rem;
+                  padding-left: 1.5rem;
+                  padding-right: 1.5rem;
+                }
+            }
+        }
+        label.logo{
+            line-height: 6rem;
+            font-size: 4rem;
+            img{
+                height: 75px;
+                width: 75px;
+                top:12px;
+            }
+        }
+    }
+    .scroll-btn-container{
+        span{
+            top:-4.5vh !important;
+            padding: 3.8rem 3.2rem!important;
+        }
+    }
+    .header-pc{
+        font-size: 3rem;
+    }
+    .review_card{
+        p,h3{
+            font-size: 1.5rem;
+        }
+    }
+    .avatar{
+        height: 100px !important;
+        width: 100px !important;
+    }
+    .team-cards{
+        height: 55vh !important;
+        h2{
+            font-size: 2rem !important;
+        }
+        h4{
+            font-size: 1.5rem !important;
+        }
+        .fa-2x{
+            font-size: 3rem;
+        }
+    }
+    .slider-control-centerright,.slider-control-centerleft{
+        button{
+            font-size: 1.25rem;
+        }
+    }
+    footer{
+        font-size: x-large;
+        h2{
+            font-size: 3rem !important;
+        }
+    }
+    .head .blur .clip-path{
+        clip-path: polygon(60% 92px, 100% 92px, 100% 100%, 40% 100%) !important;
+    }
+    .heading,.heading-gallery{
+        padding-top: 150px !important;
+        font-size: 4rem !important;
+    }
+    .events{
+        .header-pc{
+            font-size: 3rem !important;
+        }
+    }
+    .events {
+        .event-cards{
+            height: 50vh !important;
+             .event-card-outer{
+                  .event-card{ 
+                      .content{
+                          h2{
+                              font-size: 2.5rem;
+                          }
+                          h4{
+                              font-size: 1.5rem;
+                          }
+                          .registration-links{
+                              .know-more-btn,.register-btn{
+                                  font-size: 1.65rem;
+                              }
+                          }
+                      }
+                    }
+                }
+            }
+        } 
+  }
+  @media screen and (min-width: 2150px) {
+    .events {
+        .event-cards{
+            height: 47vh !important;
+             .event-card-outer{
+                  .event-card{ 
+                      .content{
+                          h2{
+                              font-size: 3rem;
+                          }
+                          h4{
+                              font-size: 2rem;
+                          }
+                          .registration-links{
+                              .know-more-btn,.register-btn{
+                                  font-size: 2.25rem;
+                              }
+                          }
+                      }
+                    }
+                }
+            }
+        }
+        .heading,.heading-gallery{
+            padding-top: 200px !important;
+            font-size: 6rem !important;
+        }   
+    footer{
           font-size: xx-large;
           h2{
               font-size: 4rem !important;
