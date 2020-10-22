@@ -654,15 +654,6 @@ nav ul li a {
   .sub-header-pc {
     font-size: 2.5rem;
   }
-  footer {
-    height: 40vh !important;
-  }
-  footer h1 {
-    font-size: 3.75rem;
-  }
-  footer a, footer p {
-    font-size: 2rem;
-  }
   .head .blur .clip-path {
     -webkit-clip-path: polygon(60% 158px, 100% 158px, 100% 100%, 40% 100%) !important;
             clip-path: polygon(60% 158px, 100% 158px, 100% 100%, 40% 100%) !important;
@@ -831,51 +822,6 @@ nav ul li a {
     top: 60vh !important;
     font-size: 2vh !important;
   }
-  footer {
-    height: 80vh !important;
-  }
-  footer .content {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-  }
-  footer .content .page-links .links {
-    -webkit-box-orient: vertical  !important;
-    -webkit-box-direction: normal  !important;
-        -ms-flex-direction: column  !important;
-            flex-direction: column  !important;
-  }
-  footer .content .page-links .links .right, footer .content .page-links .links .left {
-    padding: 0 !important;
-  }
-  footer .content .page-links .links .left {
-    padding-top: 2vh !important;
-  }
-  footer .content .contact h1 {
-    padding-top: 6vh !important;
-  }
-  footer .content .contact p {
-    padding-top: 2vh !important;
-    position: static !important;
-  }
-  footer .bottom-link .copyright-pc {
-    display: none !important;
-  }
-  .copyright-mobile {
-    display: block !important;
-    width: 100%;
-    text-align: center;
-    background-color: #000;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-  }
   .reviews .header-mobile, .reviews .sub-header-mobile {
     display: block !important;
   }
@@ -1026,114 +972,6 @@ nav ul li a {
 }
 
 .about-us .blur .background-links .clip-path .foreground-links {
-  display: none;
-}
-
-footer {
-  width: 100 vw;
-  height: 50vh;
-  background: #000;
-  color: #f4f4f4;
-}
-
-footer .content {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 5vw;
-}
-
-footer .content .page-links h1 {
-  font-family: "eliantoregular";
-}
-
-footer .content .page-links .links {
-  font-family: 'Poppins', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-footer .content .page-links .links .left, footer .content .page-links .links .right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 2vh 0;
-}
-
-footer .content .page-links .links .left a, footer .content .page-links .links .right a {
-  color: #f4f4f4;
-  padding: 1.5vh 0;
-}
-
-footer .content .page-links .links .left a:hover, footer .content .page-links .links .right a:hover {
-  text-decoration: underline;
-}
-
-footer .content .page-links .links .left {
-  padding-right: 3vw;
-}
-
-footer .content .contact {
-  font-family: 'Poppins', sans-serif;
-}
-
-footer .content .contact p {
-  padding-top: 11vh;
-  position: relative;
-  top: -9vh;
-}
-
-footer .bottom-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  background: #000;
-  padding-bottom: 2vh;
-}
-
-footer .bottom-link a {
-  width: 100%;
-  color: #f4f4f4;
-  font-family: 'Poppins', sans-serif;
-}
-
-footer .bottom-link a:hover {
-  text-decoration: underline;
-}
-
-footer .copyright-mobile {
   display: none;
 }
 

@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
+import Footer from "./Footer"
 const Layout = (props) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -25,6 +26,7 @@ const Layout = (props) => {
       <main id="main">
       {props.children}
       </main>
+      <Footer/>
     </>
   )
 }
