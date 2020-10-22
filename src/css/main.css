@@ -535,7 +535,7 @@ nav ul li a {
   .checkbtn {
     display: block;
   }
-  ul {
+  nav ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -599,6 +599,12 @@ nav ul li a {
 }
 
 @media screen and (min-width: 1900px) {
+  footer {
+    font-size: xx-large;
+  }
+  footer h2 {
+    font-size: 4rem !important;
+  }
   nav {
     height: 158px;
   }
@@ -973,6 +979,162 @@ nav ul li a {
 
 .about-us .blur .background-links .clip-path .foreground-links {
   display: none;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 0 0.5rem 0;
+  background: #000;
+  color: #f4f4f4;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer a, footer a:hover, footer a:focus, footer a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer h2 {
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 4rem 1rem 4rem;
+}
+
+footer .links .footer-links h2 {
+  font-family: "eliantoregular";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+footer .links .footer-links .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .links .footer-links .footer-nav ul:first-child {
+  padding-right: 0.75rem;
+}
+
+footer .links .footer-links .footer-nav ul:last-child {
+  padding-left: 0.75rem;
+}
+
+footer .links .footer-links .footer-nav ul li {
+  padding: 0.5rem 0;
+}
+
+footer .extras {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 4rem;
+}
+
+footer .madeBy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .madeBy a {
+  background: -webkit-gradient(linear, left top, right top, from(#833ab4), color-stop(50%, #fd1d1d), to(#fcb045));
+  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+footer .madeBy a::after {
+  background: -webkit-gradient(linear, left top, right top, from(#833ab4), color-stop(50%, #fd1d1d), to(#fcb045));
+  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  bottom: 2px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+footer .madeBy a:hover {
+  scale: 1.25;
+}
+
+@media (max-width: 426px) {
+  footer .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 0 2rem 1rem 2rem;
+  }
+  footer .links .footer-links {
+    padding-bottom: 1rem;
+  }
+  footer .links .address p {
+    line-height: 2rem;
+  }
+  footer .extras {
+    padding: 1rem 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer .extras span {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 321px) {
+  .madeBy span {
+    font-size: 0.85rem;
+  }
 }
 
 .reviews {

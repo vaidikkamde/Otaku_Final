@@ -14,10 +14,14 @@ const Header = ( props ) => {
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
+      <Link to="/">
       <label class="logo"> <img src={Logo} alt="logo"/> <span>{props.siteTitle}</span></label>
+      </Link>
       <ul className="nav-links">
         <li><Link to="/" style={{
-          background:props.location==="/"?"#000":"transparent"
+          background:props.location==="/"?"#000":"transparent",
+          textDecoration:props.location==="/"?"underline":"none",
+          textUnderlineOffset:"4px"
         }} >Home</Link></li>
         <li><Link to="/events"style={{
           background:props.location==="/events"?"#000":"transparent"
