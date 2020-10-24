@@ -49,6 +49,12 @@ function Footer(){
                     </ul>
                     </div>
                 </div>
+                <div className="social-links-pc">
+                    <h4>Follow Us @</h4>
+                    <a target="_blank" href="https://www.facebook.com/Otaku-organisation-102318237915165/" class="fab fa-facebook-square fa-2x"></a>
+                    <a target="_blank" href="https://instagram.com/otaku_org?igshid=udcp29v43n4z" class="fab fa-instagram fa-2x"></a>
+                    <a target="_blank" href="https://twitter.com/OTAKUORGANIZAT1?s=08" class="fab fa-twitter-square fa-2x"></a>
+                </div>
                 <div className="address">
                     <h2>Visit Us</h2>
                     <p>
@@ -62,6 +68,12 @@ function Footer(){
                         <br/>
                         INDIA
                     </p>
+                </div>
+                <div className="social-links-mobile">
+                    <h4>Follow Us @</h4>
+                <a target="_blank" href="https://www.facebook.com/Otaku-organisation-102318237915165/" class="fab fa-facebook-square fa-2x"></a>
+                    <a target="_blank" href="https://instagram.com/otaku_org?igshid=udcp29v43n4z" class="fab fa-instagram fa-2x"></a>
+                    <a target="_blank" href="https://twitter.com/OTAKUORGANIZAT1?s=08" class="fab fa-twitter-square fa-2x"></a>
                 </div>
             </div>
             <div className="extras">
@@ -84,7 +96,7 @@ function Footer(){
                 </Modal>   
             </div>
             <div className="madeBy">
-                <span>Designed And Developed By <a href="https://vaidikkamde.tk">Vaidik Kamde</a></span>
+                <span>Designed And Developed By <a target="_blank" href="https://vaidikkamde.tk">Vaidik Kamde</a></span>
             </div>
         </footer>
     )

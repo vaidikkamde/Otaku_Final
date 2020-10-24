@@ -18,6 +18,19 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         padding: 0 4rem 1rem 4rem;
+        .social-links-pc,.social-links-mobile{
+            display: flex;
+            align-items: center;
+            .fa-2x{
+                padding: 2rem;
+                &:hover{
+                    color: blue;
+                }
+            }
+        }
+        .social-links-mobile{
+            display: none;
+        }
         .footer-links{
             h2{
                 font-family: $Elinato;
@@ -79,6 +92,16 @@ footer{
             flex-direction: column;
             justify-content: space-evenly;
             padding: 0 2rem 1rem 2rem;
+            .social-links-pc{
+                display: none;
+            }
+            .social-links-mobile{
+                display: flex;
+                width: 100%;
+                .fa-2x{
+                    padding: 1rem;
+                }
+            }
             .footer-links{
                 padding-bottom: 1rem;
             }

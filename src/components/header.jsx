@@ -24,13 +24,19 @@ const Header = ( props ) => {
           textUnderlineOffset:"4px"
         }} >Home</Link></li>
         <li><Link to="/events"style={{
-          background:props.location==="/events"?"#000":"transparent"
+          background:props.location==="/events"?"#000":"transparent",
+          textDecoration:props.location==="/events"?"underline":"none",
+          textUnderlineOffset:"4px"
         }} >Events</Link></li>
         <li><Link to="/gallery" style={{
-          background:props.location==="/gallery"?"#000":"transparent"
+          background:props.location==="/gallery"?"#000":"transparent",
+          textDecoration:props.location==="/gallery"?"underline":"none",
+          textUnderlineOffset:"4px"
         }}>Gallery</Link></li>
         <li><Link to="/contactus" style={{
-          background:props.location==="/contactus"?"#000":"transparent"
+          background:props.location==="/contactus"?"#000":"transparent",
+          textDecoration:props.location==="/contactus"?"underline":"none",
+          textUnderlineOffset:"4px"
         }}>Contact US</Link></li>
       </ul>
     </nav>
