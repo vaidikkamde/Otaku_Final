@@ -6,6 +6,7 @@ import Head from "../components/index/head"
 import AboutUS from "../components/index/about"
 import Review from "../components/index/review"
 import Team from "../components/index/team"
+import SocialWork from "../components/index/socialWork"
 const IndexPage = (props) => {
   console.log(props.location.pathname)
   return(
@@ -16,6 +17,7 @@ const IndexPage = (props) => {
       <AboutUS/>
       <Review/>
       <Team/>
+      <SocialWork/>
     </>    
   </Layout>
 )

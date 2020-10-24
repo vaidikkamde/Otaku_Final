@@ -1623,6 +1623,7 @@ footer .madeBy a:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  font-family: 'Poppins', sans-serif;
 }
 
 .eventModal .close-btn {
@@ -1633,8 +1634,27 @@ footer .madeBy a:hover {
   padding-bottom: 2rem;
 }
 
+.eventModal .modal-heading {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+
+.eventModal .modal-subHeading {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
 .eventModal .modal-description {
   width: 30rem;
+}
+
+.eventModal .register-btn {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #f4f4f4;
+  background: red;
+  border-radius: 20px;
+  margin-top: 0.5rem;
 }
 
 .ReactModal__Content::-webkit-scrollbar-track {
@@ -1962,6 +1982,83 @@ footer .madeBy a:hover {
   }
   100% {
     text-shadow: 0 0 1rem #fefefe;
+  }
+}
+
+.social-work {
+  background: #f4f4f4;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  width: 100vw;
+}
+
+.social-work h1 {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.social-work .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 2rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-work .contents p {
+  padding-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social-work .contents p .donate {
+  color: #f4f4f4;
+  background: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.social-work .contents video {
+  padding-left: 1rem;
+  width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+  .social-work h1 {
+    font-size: 1.5rem;
+  }
+  .social-work .contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 2rem;
+  }
+  .social-work .contents p {
+    padding: 0;
+  }
+  .social-work .contents video {
+    padding: 1rem 0;
   }
 }
 
