@@ -1,5 +1,4 @@
 import React from "react"
-import EventCard from "../components/events/eventCard"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Head from "../components/events/head"

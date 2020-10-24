@@ -88,9 +88,15 @@
     .head .blur .clip-path{
         clip-path: polygon(60% 92px, 100% 92px, 100% 100%, 40% 100%) !important;
     }
-    .heading,.heading-gallery{
+    .heading{
         padding-top: 150px !important;
         font-size: 4rem !important;
+    }
+    .heading-gallery{
+        padding-top: 150px !important;
+        h1{
+            font-size: 4rem !important;
+        }
     }
     .events{
         .header-pc{
@@ -143,9 +149,15 @@
                 }
             }
         }
-        .heading,.heading-gallery{
+        .heading{
             padding-top: 200px !important;
             font-size: 6rem !important;
+        }
+        .heading-gallery{
+            padding-top: 200px !important;
+            h1{
+                font-size: 6rem !important;
+            }
         }   
     footer{
           font-size: xx-large;

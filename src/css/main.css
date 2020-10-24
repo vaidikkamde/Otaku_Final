@@ -658,8 +658,14 @@ nav ul li a {
     -webkit-clip-path: polygon(60% 92px, 100% 92px, 100% 100%, 40% 100%) !important;
             clip-path: polygon(60% 92px, 100% 92px, 100% 100%, 40% 100%) !important;
   }
-  .heading, .heading-gallery {
+  .heading {
     padding-top: 150px !important;
+    font-size: 4rem !important;
+  }
+  .heading-gallery {
+    padding-top: 150px !important;
+  }
+  .heading-gallery h1 {
     font-size: 4rem !important;
   }
   .events .header-pc {
@@ -692,8 +698,14 @@ nav ul li a {
   .events .event-cards .event-card-outer .event-card .content .registration-links .know-more-btn, .events .event-cards .event-card-outer .event-card .content .registration-links .register-btn {
     font-size: 2.25rem;
   }
-  .heading, .heading-gallery {
+  .heading {
     padding-top: 200px !important;
+    font-size: 6rem !important;
+  }
+  .heading-gallery {
+    padding-top: 200px !important;
+  }
+  .heading-gallery h1 {
     font-size: 6rem !important;
   }
   footer {
@@ -1611,18 +1623,82 @@ footer .madeBy a:hover {
 
 .heading-gallery {
   padding-top: 100px;
-  font-size: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #f4f4f4;
+  background: #006666;
+}
+
+.heading-gallery h1 {
+  font-size: 3.5rem;
   font-family: "eliantoregular";
-  color: #000;
+}
+
+.heading-gallery h5 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  background: #006666;
+  /* Create four equal columns that sits next to each other */
+}
+
+.hero .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.hero .column {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.hero .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .hero .column {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .hero .column {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 100%;
+  }
+  .hero .row {
+    padding: 2rem 1.5rem;
+  }
 }
 
 .stop-scrolling {

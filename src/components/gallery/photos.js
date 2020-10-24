@@ -1,55 +1,34 @@
-const images = require.context('../../images/events', true)
+const images = require.context('../../images/gallery', true)
 const imagePath = name => images(name, true)
 function Image(imageName){
     return(
         `${imagePath('./'+imageName)}`
     )
 }
-export const photos = [
+const PhotosArray = [
     {
-      src: `${Image('ENIGMA.jpeg')}`,
-      width: 4,
-      height: 3
+      src: `${Image('06.jpeg')}`,
+      caption:"Caption 6"
     },
     {
-      src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-      width: 1,
-      height: 1
+      src: `${Image('05.jpeg')}`,
+      caption:"Caption 5"
     },
     {
-      src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-      width: 3,
-      height: 4
+      src: `${Image('04.jpeg')}`,
+      caption:"Caption 4"
     },
     {
-      src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-      width: 3,
-      height: 4
+      src: `${Image('03.jpeg')}`,
+      caption:"Caption 3"
     },
     {
-      src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-      width: 3,
-      height: 4
+      src: `${Image('02.jpeg')}`,
+      caption:"Caption 2"
     },
     {
-      src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
-      width: 4,
-      height: 3
+      src: `${Image('01.jpeg')}`,
+      caption:"Caption 1"
     },
-    {
-      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-      width: 4,
-      height: 3
-    }
-  ];
-  
+];
+  export default PhotosArray;
