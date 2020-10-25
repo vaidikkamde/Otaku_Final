@@ -71,7 +71,9 @@ const EventCard = (props) =>{
                                 <h4 className="modal-days">July 6 2020 to July 12 2020</h4>
                                 <h4 className="modal-timings">5:00 PM to 7:00 PM</h4>
                                 <h4 className="registration-fees">Rs -/ 100</h4>
-                                <a href="" className="register-btn">Register</a>
+                                <a href="" style={{
+                            display:registration?"block":"none"
+                        }} className="register-btn">Register</a>
                             </div>
                         </Modal>
                     </div>

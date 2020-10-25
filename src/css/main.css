@@ -1252,6 +1252,7 @@ footer .madeBy a:hover {
   }
   footer .links .social-links-mobile .fa-2x {
     padding: 1rem;
+    font-size: 2.5rem !important;
   }
   footer .links .footer-links {
     padding-bottom: 1rem;
@@ -1745,10 +1746,10 @@ footer .madeBy a:hover {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .hero .column {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
   }
   .hero .row {
     padding: 2rem 1.5rem;
@@ -1756,6 +1757,10 @@ footer .madeBy a:hover {
 }
 
 /*Variables*/
+.cont404 {
+  height: 100vh;
+}
+
 .left-section .inner-content {
   position: absolute;
   top: 50%;
