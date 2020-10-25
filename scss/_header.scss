@@ -1,9 +1,8 @@
 nav{
   background: transparent;
 /* Note: currently only Safari supports backdrop-filter */
-backdrop-filter: blur(41px);
---webkit-backdrop-filter: blur(41px);
-background-color: rgba(0, 0, 0, 0.31);
+backdrop-filter: blur(21px);
+background-color: rgba(0, 0, 0, 0.61);
 /* (plus shape's fill blended on top as a separate layer with 14% opacity) */
   height: 65px;
   width: 100%;

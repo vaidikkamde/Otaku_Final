@@ -15,7 +15,9 @@ const Header = ( props ) => {
         <i class="fas fa-bars"></i>
       </label>
       <Link to="/">
-      <label class="logo" style={{cursor:"pointer"}}> <img src={Logo} alt="logo"/> <span>{props.siteTitle}</span></label>
+      <label class="logo" style={{cursor:"pointer"}}> <img src={Logo} style={{
+        top:props.location==="/contactus"?"-3px":undefined
+      }} alt="logo"/> <span>{props.siteTitle}</span></label>
       </Link>
       <ul className="nav-links">
         <li><Link to="/" style={{
