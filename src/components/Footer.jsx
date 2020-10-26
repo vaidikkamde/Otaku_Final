@@ -4,6 +4,8 @@ import Modal from 'react-modal';
 import Privacy from "./Privacy"
 Modal.setAppElement(`#___gatsby`);
 function Footer(){
+    const date = new Date();
+    const year = date.getFullYear();
     const customStyles = {
         content : {
             top                   : '55%',
@@ -78,7 +80,7 @@ function Footer(){
             </div>
             <div className="extras">
                 <Link to="/sitemap.xml">Sitemap</Link>
-                <span>&#169; Student Organization Otaku</span>
+                <span>&copy; {year} Student Organization Otaku</span>
                 <span style={{
                     cursor:"pointer"
                 }} onClick={openModal}>Privacy Policy</span>
