@@ -869,31 +869,31 @@ function Form(){
         <form onSubmit={sendEmail} autoComplete="off">
         <div className="container contactus">
         <div class="row input-container">
-			<div class=" col col-xs-12">
+			<div class="col-xs-12">
 				<div class="styled-input wide">
 					<input onChange={nameChange} type="text" id="name" name="name" required />
 					<label htmlFor="name">Name</label> 
 				</div>
 			</div>
-			<div class="col col-md-6 col-sm-12">
+			<div class="col-md-6 col-sm-12">
 				<div class="styled-input">
 					<input onChange={emailChange} type="text" id="email" name="email" required />
 					<label htmlFor="email">Email</label> 
 				</div>
 			</div>
-			<div class="col col-md-6 col-sm-12">
+			<div class="col-md-6 col-sm-12">
 				<div class="styled-input" style={{float:"right"}}>
 					<input onChange={phoneChange} type="text" id="number" name="number" required />
 					<label htmlFor="number" >Phone Number</label> 
 				</div>
 			</div>
-			<div class="col col-xs-12">
+			<div class="col-xs-12">
 				<div class="styled-input wide">
 					<textarea onChange={messageChange} id="message" name="message" required></textarea>
 					<label htmlFor="message" >Message</label>
 				</div>
 			</div>
-			<div class="col col-xs-12">
+			<div class="col-xs-12">
 				<button type="submit" class="btn-lrg submit-btn">Send Message</button>
 			</div>
 	        </div>
