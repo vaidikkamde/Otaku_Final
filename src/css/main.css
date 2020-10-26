@@ -2067,6 +2067,10 @@ footer .madeBy a:hover {
   max-width: 100% !important;
 }
 
+.col-md-6, .col-sm-12 {
+  padding: 0;
+}
+
 .contactus {
   background: #444442;
   max-width: 100%;
