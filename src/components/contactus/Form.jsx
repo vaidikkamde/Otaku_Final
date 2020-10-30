@@ -1,37 +1,37 @@
-import React,{useState} from "react"
+import React, { useState } from "react"
 import { Helmet } from "react-helmet"
-import { useAlert } from "react-alert";
-function Form(){
-    const alert = useAlert();
-    const [name,setName] = useState("")
-    const [email,setEmail] = useState("")
-    const [phone,setPhone] = useState("")
-    const [message,setMessage] = useState("")
-    function nameChange(e){
-        setName(e.target.value)
-    }
-    function emailChange(e){
-        setEmail(e.target.value)
-    }
-    function phoneChange(e){
-        setPhone(e.target.value)
-    }
-    function messageChange(e){
-        setMessage(e.target.value)
-    }
-    function sendEmail(e){
-        e.preventDefault();
-        console.log("Button Clicked");
-        console.log(name);
-        console.log(email);
-        console.log(phone);
-        console.log(message);
-        window.Email.send({
-            SecureToken : "b6376ec3-3b66-448b-9b38-f1ebd36a6605",
-            To : 'vaidik16206138@gmail.com',
-            From : "vaidik16206138@gmail.com",
-            Subject : `You have a message from ${name}`,
-            Body : `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+import { useAlert } from "react-alert"
+function Form() {
+  const alert = useAlert()
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [phone, setPhone] = useState("")
+  const [message, setMessage] = useState("")
+  function nameChange(e) {
+    setName(e.target.value)
+  }
+  function emailChange(e) {
+    setEmail(e.target.value)
+  }
+  function phoneChange(e) {
+    setPhone(e.target.value)
+  }
+  function messageChange(e) {
+    setMessage(e.target.value)
+  }
+  function sendEmail(e) {
+    e.preventDefault()
+    console.log("Button Clicked")
+    console.log(name)
+    console.log(email)
+    console.log(phone)
+    console.log(message)
+    window.Email.send({
+      SecureToken: `${process.env.GATSBY_ENCRYPT}`,
+      To: `${process.env.GATSBY_CEO_USERNAME}`,
+      From: `${process.env.GATSBY_NOREPLY_USERNAME}`,
+      Subject: `You have a message from ${name}`,
+      Body: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
             <html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
             <head>
@@ -553,24 +553,24 @@ function Form(){
             </table>
             <!--[if (IE)]></div><![endif]-->
             </body>
-            </html>`
-        }).then(
-          message => {
-            //   alert(message)
-              console.log(message);
-                if(message==="OK"){
-                    alert.success("Message Sent");
-                }else{
-                    alert.error("Sorry an error occured while sending the message please try again or try reaching out at our social media handles mentioned at the bottom of the page")
-                }
-            }
-        );
-        window.Email.send({
-            SecureToken : "b6376ec3-3b66-448b-9b38-f1ebd36a6605",
-            To : `${email}`,
-            From : "vaidik16206138@gmail.com",
-            Subject : "Thank you for contacting us",
-            Body : `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+            </html>`,
+    }).then(message => {
+      //   alert(message)
+      console.log(message)
+      if (message === "OK") {
+        alert.success("Message Sent")
+      } else {
+        alert.error(
+          "Sorry an error occured while sending the message please try again or try reaching out at our social media handles mentioned at the bottom of the page"
+        )
+      }
+    })
+    window.Email.send({
+      SecureToken: `${process.env.GATSBY_ENCRYPT}`,
+      To: `${email}`,
+      From: `${process.env.GATSBY_NOREPLY_USERNAME}`,
+      Subject: "Thank you for contacting us",
+      Body: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
             <html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
             <head>
@@ -850,57 +850,92 @@ function Form(){
             </table>
             <!--[if (IE)]></div><![endif]-->
             </body>
-            </html>`
-        }).then(
-          message => {
-              console.log(message);
-          }
-        );
-    }
-    return(
-        <>
-        <Helmet>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossOrigin="anonymous"/>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossOrigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossOrigin="anonymous"></script>
-        <script src="https://smtpjs.com/v3/smtp.js">
-        </script>
-        </Helmet>
-        <form onSubmit={sendEmail} autoComplete="off">
+            </html>`,
+    }).then(message => {
+      console.log(message)
+    })
+  }
+  return (
+    <>
+      <Helmet>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+          crossOrigin="anonymous"
+        />
+        <script
+          src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossOrigin="anonymous"
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+          crossOrigin="anonymous"
+        ></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+      </Helmet>
+      <form onSubmit={sendEmail} autoComplete="off">
         <div className="container contactus">
-        <div class="row input-container">
-			<div class="col-xs-12">
-				<div class="styled-input wide">
-					<input onChange={nameChange} type="text" id="name" name="name" required />
-					<label htmlFor="name">Name</label> 
-				</div>
-			</div>
-			<div class="col-md-6 col-sm-12">
-				<div class="styled-input">
-					<input onChange={emailChange} type="text" id="email" name="email" required />
-					<label htmlFor="email">Email</label> 
-				</div>
-			</div>
-			<div class="col-md-6 col-sm-12">
-				<div class="styled-input" style={{float:"right"}}>
-					<input onChange={phoneChange} type="text" id="number" name="number" required />
-					<label htmlFor="number" >Phone Number</label> 
-				</div>
-			</div>
-			<div class="col-xs-12">
-				<div class="styled-input wide">
-					<textarea onChange={messageChange} id="message" name="message" required></textarea>
-					<label htmlFor="message" >Message</label>
-				</div>
-			</div>
-			<div class="col-xs-12">
-				<button type="submit" class="btn-lrg submit-btn">Send Message</button>
-			</div>
-	        </div>
+          <div class="row input-container">
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <input
+                  onChange={nameChange}
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                />
+                <label htmlFor="name">Name</label>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="styled-input">
+                <input
+                  onChange={emailChange}
+                  type="text"
+                  id="email"
+                  name="email"
+                  required
+                />
+                <label htmlFor="email">Email</label>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="styled-input" style={{ float: "right" }}>
+                <input
+                  onChange={phoneChange}
+                  type="text"
+                  id="number"
+                  name="number"
+                  required
+                />
+                <label htmlFor="number">Phone Number</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <textarea
+                  onChange={messageChange}
+                  id="message"
+                  name="message"
+                  required
+                ></textarea>
+                <label htmlFor="message">Message</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <button type="submit" class="btn-lrg submit-btn">
+                Send Message
+              </button>
+            </div>
+          </div>
         </div>
-        </form>
-        </>
-    )
-} 
+      </form>
+    </>
+  )
+}
 
 export default Form

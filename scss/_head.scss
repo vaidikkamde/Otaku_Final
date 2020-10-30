@@ -1,96 +1,97 @@
-.head{
-    height: 100vh;
-    width:100vw;
-    background: url(../images/hero.jpg) center left;
-    background-size: cover;
+@use "config";
+
+.head {
+  height: 100vh;
+  width: 100vw;
+  background: url(../images/hero.jpg) center left;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  .blur {
+    height: 90vh;
+    width: 100vw;
+    background: transparent;
+    /* Note: currently only Safari supports backdrop-filter */
+    backdrop-filter: blur(4px);
+    --webkit-backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.3);
+    /* (plus shape's fill blended on top as a separate layer with 26% opacity) */
+
+    .clip-path {
+      height: 100%;
+      width: 100vw;
+      clip-path: polygon(60% 65px, 100% 65px, 100% 100%, 40% 100%);
+      background: config.$background-color;
+    }
+  }
+  .content {
+    // position: absolute;
+    // top: 28%;
+    // left:4.5%;
+    .heading-mobile,
+    .sub-heading-mobile {
+      display: none;
+    }
+    .heading-pc {
+      font-family: config.$Elinato;
+      color: config.$text-color;
+      font-size: 17.3vh;
+      font-weight: normal;
+      position: absolute;
+      top: 28vh;
+      left: 4.5vw;
+    }
+    .sub-heading-pc {
+      position: absolute;
+      top: 57vh;
+      right: 20vw;
+      font-family: config.$Elinato;
+      color: config.$text-color;
+      font-size: 7vh;
+      font-weight: 300;
+    }
+    .latest-events {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 73vh;
+      right: 22vw;
+      padding: 1rem 1rem 1rem 1.3rem;
+      font-size: 4vh;
+      border-radius: 59px;
+      border: none;
+      color: config.$text-color;
+      font-family: config.$Elinato;
+      span {
+        padding: 0 0.3rem;
+      }
+      background: config.$background-color;
+      box-shadow: config.$light-shadow, config.$dark-shadow;
+
+      animation: to-froth 3s linear infinite;
+    }
+  }
+  .scroll-btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: config.$text-color;
+    height: 10vh;
     position: relative;
-    z-index: 1;
-    overflow: hidden;
-    .blur{
-        height: 90vh;
-        width:100vw;
-        background: transparent;
-        /* Note: currently only Safari supports backdrop-filter */
-        backdrop-filter: blur(4px);
-        --webkit-backdrop-filter: blur(4px);
-        background-color: rgba(0, 0, 0, 0.3);
-        /* (plus shape's fill blended on top as a separate layer with 26% opacity) */
-        
-        .clip-path{
-            height: 100%;
-            width: 100vw;
-            clip-path: polygon(60% 65px, 100% 65px, 100% 100%, 40% 100%);
-            background: $background-color;
-        }
+    z-index: -1;
+    span {
+      padding: 2.8rem 2.2rem;
+      border-radius: 100%;
+      background: config.$text-color;
+      position: relative;
+      top: -6vh;
+      filter: drop-shadow(0 4px 10px #000);
+      animation: scroll-btn-animation 3s linear infinite;
+      a {
+        color: #000;
+      }
     }
-    .content{
-        // position: absolute;
-        // top: 28%;
-        // left:4.5%;
-        .heading-mobile,.sub-heading-mobile{
-            display: none;
-        }
-        .heading-pc{
-            font-family: $Elinato;
-            color:$text-color;
-            font-size:17.3vh;
-            font-weight: normal;
-            position: absolute;
-            top: 28vh;
-            left:4.5vw;
-
-        }
-        .sub-heading-pc{
-            position: absolute;
-            top:57vh;
-            right:20vw;
-            font-family: $Elinato;
-            color:$text-color;
-            font-size: 7vh;
-            font-weight: 300;
-        }
-        .latest-events{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top:73vh;
-            right:22vw;
-            padding: 1rem 1rem 1rem 1.3rem;
-            font-size: 4vh;
-            border-radius: 59px;
-            border:none;
-            color:$text-color;
-            font-family: $Elinato;
-            span{
-                padding: 0 0.3rem;
-            }
-            background: $background-color;
-            box-shadow: $light-shadow,$dark-shadow;
-
-            animation: to-froth 3s linear infinite;
-        }
-    }
-    .scroll-btn-container{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        background: $text-color;
-        height: 10vh;
-        position: relative;
-        z-index: -1;
-        span{
-            padding: 2.8rem 2.2rem;
-            border-radius: 100%;
-            background: $text-color;
-            position: relative;
-            top:-6vh;
-            filter: drop-shadow(0 4px 10px #000);
-            animation: scroll-btn-animation 3s linear infinite;
-            a{
-            color:#000;
-            
-            }
-        }
-    }
+  }
 }

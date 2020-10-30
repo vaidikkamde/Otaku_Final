@@ -1,4 +1,18 @@
-@import "./config","./head","./header","./media","./about-us","./footer","./review","./team","./events","./modals","./_gallery","./404","./social-work","./contactus";
+@use "./config";
+@use "./head";
+@use "./header";
+@use "./media";
+@use "./about-us";
+@use "./footer";
+@use "./review";
+@use "./team";
+@use "./events";
+@use "./modals";
+@use "./_gallery";
+@use "./404";
+@use "./social-work";
+@use "./contactus";
+
 .stop-scrolling{
     overflow: hidden;
 }

@@ -1,53 +1,55 @@
-.social-work{
-    background: $text-color;
-    color:#000;
-    font-family: 'Poppins', sans-serif;
-    width: 100vw;
-    h1{
-        width: 100%;
-        text-align: center;
-        padding: 1.5rem 0;
-        font-size: 3rem;
-        text-transform: uppercase;
+@use "config";
+
+.social-work {
+  background: config.$text-color;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  h1 {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  .contents {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    p {
+      padding-right: 1rem;
+      display: flex;
+      flex-direction: column;
+      .donate {
+        color: config.$text-color;
+        background: #000;
+        padding: 0.5rem 1rem;
+        border-radius: 30px;
+        align-self: center;
+      }
     }
-    .contents{
-        display: flex;
-        flex-direction: row;
-        padding: 2rem;
-        justify-content: space-evenly;
-        align-items: center;
-        p{
-            padding-right: 1rem;
-            display: flex;
-            flex-direction: column;
-            .donate{
-                color:$text-color;
-                background: #000;
-                padding: 0.5rem 1rem;
-                border-radius: 30px;
-                align-self: center;
-            }
-        }
-        video{
-            padding-left: 1rem;
-            width: 500px;
-        }
+    video {
+      padding-left: 1rem;
+      width: 500px;
     }
+  }
 }
 @media screen and (max-width: 600px) {
-    .social-work{
-        h1{
-            font-size: 1.5rem;
-        }
-        .contents{
-            flex-direction: column;
-            padding: 0 2rem;
-            p{
-                padding:0;
-            }
-            video{
-                padding: 1rem 0;
-            }
-        }
+  .social-work {
+    h1 {
+      font-size: 1.5rem;
     }
+    .contents {
+      flex-direction: column;
+      padding: 0 2rem;
+      p {
+        padding: 0;
+      }
+      video {
+        padding: 1rem 0;
+      }
+    }
+  }
 }

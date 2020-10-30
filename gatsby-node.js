@@ -5,17 +5,22 @@
  */
 
 // You can delete this file if you're not using it
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-    if (stage === "build-html") {
-      actions.setWebpackConfig({
-        module: {
-          rules: [
-            {
-              test: /bad-module/,
-              use: loaders.null(),
-            },
-          ],
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /\.md$/,
+          loaders: ["html-loader", "markdown-loader"],
         },
-      })
-    }
-  }
+        {
+          test: /\.html$/,
+          loader: "html-loader",
+          options: {
+            minimize: false,
+          },
+        },
+      ],
+    },
+  })
+}
