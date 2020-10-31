@@ -28,8 +28,8 @@ const Team = props => {
         heightMode={"current"}
         autoplay={true}
         autoplayInterval={5000}
-        wrapAround={true}
-        cellAlign={"right"}
+        wrapAround={false}
+        cellAlign={"left"}
         slidesToShow={width > 1025 ? 3 : 1}
         slidesToScroll={1}
       >

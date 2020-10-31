@@ -32,9 +32,12 @@ const AboutUS = props => {
                     Gallery <span>{">>"}</span>
                   </div>
                 </Link>
+                <Link to="/eventwinners">
+                  {" "}
                 <div className="event-winner-btn">
                   Event Winners <span>{">>"}</span>
                 </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -47,9 +50,12 @@ const AboutUS = props => {
                   Gallery <span>{">>"}</span>
                 </div>
               </Link>
+              <Link to="/eventwinners">
+                {" "}
               <div className="event-winner-btn">
                 Event Winners <span>{">>"}</span>
               </div>
+              </Link>
             </div>
           </div>
         </div>

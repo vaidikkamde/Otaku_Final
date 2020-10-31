@@ -30,31 +30,17 @@ const AllEvents = props => {
       />
     )
   }
-  function genrateEvents(array) {
+  function genrateUpEvents(array) {
     if (array.length === 0) {
       return (
-        <Carousel
-          withoutControls={width > 1025 ? false : true}
-          renderBottomCenterControls={false}
-          heightMode={"max"}
-          autoplay={true}
-          autoplayInterval={5000}
-          wrapAround={false}
-          cellAlign={"left"}
-          slidesToShow={width > 1025 ? 3 : 1}
-          slidesToScroll={1}
-        >
-          {nullValues.map((nullValue, index) => {
-            return (
-              <div className="nullEvents" key={index}>
-                {nullValue}
-              </div>
-            )
-          })}
-        </Carousel>
+        <div></div>
       )
     } else if (array.length === 1) {
       return (
+        <section class="events">
+        <h1 class="header-pc">Upcoming Events</h1>
+        <h5 class="sub-header-pc">Click and drag to view more</h5>
+        <h5 class="sub-header-mobile">Swipe To View More</h5>
         <Carousel
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
@@ -76,9 +62,14 @@ const AllEvents = props => {
               )
           })}
         </Carousel>
+        </section>
       )
     } else if (array.length === 2) {
       return (
+        <section class="events">
+        <h1 class="header-pc">Upcoming Events</h1>
+        <h5 class="sub-header-pc">Click and drag to view more</h5>
+        <h5 class="sub-header-mobile">Swipe To View More</h5>
         <Carousel
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
@@ -100,9 +91,14 @@ const AllEvents = props => {
               )
           })}
         </Carousel>
+        </section>
       )
     } else {
       return (
+        <section class="events">
+        <h1 class="header-pc">Upcoming Events</h1>
+        <h5 class="sub-header-pc">Click and drag to view more</h5>
+        <h5 class="sub-header-mobile">Swipe To View More</h5>
         <Carousel
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
@@ -116,29 +112,188 @@ const AllEvents = props => {
         >
           {array.map(genrateCards)}
         </Carousel>
+        </section>
       )
     }
   }
-  return (
-    <>
-      <section class="events">
-        <h1 class="header-pc">Upcoming Events</h1>
-        <h5 class="sub-header-pc">Click and drag to view more</h5>
-        <h5 class="sub-header-mobile">Swipe To View More</h5>
-        {genrateEvents(upComing)}
-      </section>
-      <section class="events">
+  function genrateOnEvents(array) {
+    if (array.length === 0) {
+      return (
+        <div></div>
+      )
+    } else if (array.length === 1) {
+      return (
+        <section class="events">
         <h1 class="header-pc">Ongoing Events</h1>
         <h5 class="sub-header-pc">Click and drag to view more</h5>
         <h5 class="sub-header-mobile">Swipe To View More</h5>
-        {genrateEvents(onGoing)}
-      </section>
-      <section class="events">
+        <Carousel
+          withoutControls={width > 1025 ? false : true}
+          renderBottomCenterControls={false}
+          heightMode={"max"}
+          autoplay={true}
+          autoplayInterval={5000}
+          wrapAround={false}
+          cellAlign={"left"}
+          slidesToShow={width > 1025 ? 3 : 1}
+          slidesToScroll={1}
+        >
+          {array.map(genrateCards)}
+          {nullValues.map((nullValue, index) => {
+            if (index != 0)
+              return (
+                <div className="nullEvents" key={index}>
+                  {nullValue}
+                </div>
+              )
+          })}
+        </Carousel>
+        </section>
+      )
+    } else if (array.length === 2) {
+      return (
+        <section class="events">
+        <h1 class="header-pc">Ongoing Events</h1>
+        <h5 class="sub-header-pc">Click and drag to view more</h5>
+        <h5 class="sub-header-mobile">Swipe To View More</h5>
+        <Carousel
+          withoutControls={width > 1025 ? false : true}
+          renderBottomCenterControls={false}
+          heightMode={"max"}
+          autoplay={true}
+          autoplayInterval={5000}
+          wrapAround={false}
+          cellAlign={"left"}
+          slidesToShow={width > 1025 ? 3 : 1}
+          slidesToScroll={1}
+        >
+          {array.map(genrateCards)}
+          {nullValues.map((nullValue, index) => {
+            if (index === 2)
+              return (
+                <div className="nullEvents" key={index}>
+                  {nullValue}
+                </div>
+              )
+          })}
+        </Carousel>
+        </section>
+      )
+    } else {
+      return (
+        <section class="events">
+        <h1 class="header-pc">Ongoing Events</h1>
+        <h5 class="sub-header-pc">Click and drag to view more</h5>
+        <h5 class="sub-header-mobile">Swipe To View More</h5>
+        <Carousel
+          withoutControls={width > 1025 ? false : true}
+          renderBottomCenterControls={false}
+          heightMode={"max"}
+          autoplay={true}
+          autoplayInterval={5000}
+          wrapAround={false}
+          cellAlign={"left"}
+          slidesToShow={width > 1025 ? 3 : 1}
+          slidesToScroll={1}
+        >
+          {array.map(genrateCards)}
+        </Carousel>
+        </section>
+      )
+    }
+  }
+  function genratePastEvents(array) {
+    if (array.length === 0) {
+      return (
+        <div></div>
+      )
+    } else if (array.length === 1) {
+      return (
+        <section class="events">
         <h1 class="header-pc">Past Events</h1>
         <h5 class="sub-header-pc">Click and drag to view more</h5>
         <h5 class="sub-header-mobile">Swipe To View More</h5>
-        {genrateEvents(past)}
-      </section>
+        <Carousel
+          withoutControls={width > 1025 ? false : true}
+          renderBottomCenterControls={false}
+          heightMode={"max"}
+          autoplay={true}
+          autoplayInterval={5000}
+          wrapAround={false}
+          cellAlign={"left"}
+          slidesToShow={width > 1025 ? 3 : 1}
+          slidesToScroll={1}
+        >
+          {array.map(genrateCards)}
+          {nullValues.map((nullValue, index) => {
+            if (index != 0)
+              return (
+                <div className="nullEvents" key={index}>
+                  {nullValue}
+                </div>
+              )
+          })}
+        </Carousel>
+        </section>
+      )
+    } else if (array.length === 2) {
+      return (
+        <section class="events">
+        <h1 class="header-pc">Past Events</h1>
+        <h5 class="sub-header-pc">Click and drag to view more</h5>
+        <h5 class="sub-header-mobile">Swipe To View More</h5>
+        <Carousel
+          withoutControls={width > 1025 ? false : true}
+          renderBottomCenterControls={false}
+          heightMode={"max"}
+          autoplay={true}
+          autoplayInterval={5000}
+          wrapAround={false}
+          cellAlign={"left"}
+          slidesToShow={width > 1025 ? 3 : 1}
+          slidesToScroll={1}
+        >
+          {array.map(genrateCards)}
+          {nullValues.map((nullValue, index) => {
+            if (index === 2)
+              return (
+                <div className="nullEvents" key={index}>
+                  {nullValue}
+                </div>
+              )
+          })}
+        </Carousel>
+        </section>
+      )
+    } else {
+      return (
+        <section class="events">
+        <h1 class="header-pc">Past Events</h1>
+        <h5 class="sub-header-pc">Click and drag to view more</h5>
+        <h5 class="sub-header-mobile">Swipe To View More</h5>
+        <Carousel
+          withoutControls={width > 1025 ? false : true}
+          renderBottomCenterControls={false}
+          heightMode={"max"}
+          autoplay={true}
+          autoplayInterval={5000}
+          wrapAround={false}
+          cellAlign={"left"}
+          slidesToShow={width > 1025 ? 3 : 1}
+          slidesToScroll={1}
+        >
+          {array.map(genrateCards)}
+        </Carousel>
+        </section>
+      )
+    }
+  }
+  
+  return (
+    <>
+      {genrateUpEvents(upComing)}
+      {genrateOnEvents(onGoing)}
+      {genratePastEvents(past)}
     </>
   )
 }

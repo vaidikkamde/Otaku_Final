@@ -1,4 +1,4 @@
-@use "config";
+
 
 nav {
   background: transparent;
@@ -10,10 +10,10 @@ nav {
   width: 100%;
   position: fixed;
   z-index: 2;
-  font-family: config.$Elinato;
+  font-family: $Elinato;
 }
 label.logo {
-  color: config.$text-color;
+  color: $text-color;
   font-size: 35px;
   line-height: 65px;
   padding: 0 2rem;
@@ -35,7 +35,7 @@ nav ul li {
   margin: 0 5px;
 }
 nav ul li a {
-  color: config.$text-color;
+  color: $text-color;
   font-size: 1.25rem;
   padding: 7px 13px;
   border-radius: 3px;

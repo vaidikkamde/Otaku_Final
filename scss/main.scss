@@ -1,18 +1,4 @@
-@use "./config";
-@use "./head";
-@use "./header";
-@use "./media";
-@use "./about-us";
-@use "./footer";
-@use "./review";
-@use "./team";
-@use "./events";
-@use "./modals";
-@use "./_gallery";
-@use "./404";
-@use "./social-work";
-@use "./contactus";
-
+@import "./config","./404","./about-us","./contactus","./events","./eventwinner","./footer","./gallery","./head","./header","./media","./modals","./review","./social-work","./team";
 .stop-scrolling{
     overflow: hidden;
 }

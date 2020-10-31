@@ -1,11 +1,10 @@
-@use "config";
 
 footer {
   display: flex;
   flex-direction: column;
   padding: 2rem 0 0.5rem 0;
   background: #000;
-  color: config.$text-color;
+  color: $text-color;
   font-family: "Poppins", sans-serif;
   a,
   a:hover,
@@ -39,7 +38,7 @@ footer {
     }
     .footer-links {
       h2 {
-        font-family: config.$Elinato;
+        font-family: $Elinato;
         text-transform: uppercase;
         letter-spacing: 2px;
       }

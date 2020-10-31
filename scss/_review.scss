@@ -1,4 +1,4 @@
-@use "config";
+
 
 .reviews {
   height: fit-content;
@@ -29,7 +29,7 @@
     width: 70%;
     padding: 2vh 2vw;
     background: #393b44;
-    color: config.$text-color;
+    color: $text-color;
     border-radius: 20px;
     margin-left: 15%;
     .review_card {

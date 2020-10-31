@@ -8,18 +8,8 @@ function SocialWork(props) {
       <h1>Social Responsibilty</h1>
       <div className="contents">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-          velit deserunt. Laborum laboriosam odio voluptatum amet provident
-          omnis ratione repellendus, temporibus unde dolor itaque veniam.
-          Dignissimos perferendis iure aperiam a harum. Est facere sunt ipsam
-          voluptates quas iure quod maiores, ea a officiis sint, saepe nulla
-          inventore, quibusdam cumque vero accusamus temporibus excepturi autem
-          doloribus nesciunt hic provident aliquid. Perferendis repellendus,
-          facilis tenetur accusamus similique non eligendi et dolores tempore
-          fugit quasi voluptatem itaque deleniti corrupti enim? Neque asperiores
-          qui voluptates optio ullam ab dolorem, porro possimus labore modi
-          dicta tenetur vitae, vel consequatur natus at, temporibus delectus
-          iure incidunt?
+          As one of the leading Student Organization in our university it is our duty to help those who are in need no matter if they are from our university or not. Otaku regulary volunteers in events and drives for social cause. Last Year Otaku adopted an <span style={{"fontWeight":"bolder"}}>Old Age Home and NGO  Sri Sai Anadha Vrudhashramam.</span> Otaku regularly donates a part of revenue genrated from the events to the developement of the NGO but funds for social cause are always welcomed.<br/> So help Otaku and help Sri Sai Anadha Vrudhashramam so that we can take care and provide help to those who are in need by doanting some amount using the link Below. 
+          <br />
           <br />
           <a
             className="donate"
