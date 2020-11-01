@@ -31,7 +31,7 @@ const Review = props => {
         withoutControls={width > 1025 ? false : true}
         renderBottomCenterControls={false}
         heightMode={width > 1025 ? "max" : "current"}
-        autoplay={true}
+        autoplay={width > 1025 ? true : false}
         autoplayInterval={4000}
         wrapAround={true}
         cellAlign={"right"}
