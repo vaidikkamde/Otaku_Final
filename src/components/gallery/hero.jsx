@@ -31,22 +31,22 @@ function Hero(props) {
     },
   }
   function createColoumnOne(photo, index) {
-    if ((index + 1) % 4 == 1) {
+    if ((index + 1) % 4 === 1) {
       return <img key={index} src={photo.src} alt={photo.caption} />
     }
   }
   function createColoumnTwo(photo, index) {
-    if ((index + 1) % 4 == 2) {
+    if ((index + 1) % 4 === 2) {
       return <img key={index} src={photo.src} alt={photo.caption} />
     }
   }
   function createColoumnThree(photo, index) {
-    if ((index + 1) % 4 == 3) {
+    if ((index + 1) % 4 === 3) {
       return <img key={index} src={photo.src} alt={photo.caption} />
     }
   }
   function createColoumnFour(photo, index) {
-    if ((index + 1) % 4 == 0) {
+    if ((index + 1) % 4 === 0) {
       return <img key={index} src={photo.src} alt={photo.caption} />
     }
   }

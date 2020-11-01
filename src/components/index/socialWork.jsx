@@ -14,6 +14,7 @@ function SocialWork(props) {
           <a
             className="donate"
             target="_blank"
+            rel="noreferrer noopener"
             href="https://www.srisaianadhavrudhashramam.org/"
           >
             Donate

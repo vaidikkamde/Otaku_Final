@@ -11,11 +11,11 @@ const Header = props => {
   return (
     <nav>
       <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
+      <label for="check" className="checkbtn">
+        <i className="fas fa-bars"></i>
       </label>
       <Link to="/">
-        <label class="logo" style={{ cursor: "pointer" }}>
+        <label className="logo" style={{ cursor: "pointer" }}>
           {" "}
           <img
             src={Logo}

@@ -64,19 +64,22 @@ function Footer() {
         <div className="social-links-pc">
           <h4>Follow Us @</h4>
           <a
+            rel="noreferrer noopener"
             target="_blank"
             href="https://www.facebook.com/Otaku-organisation-102318237915165/"
-            class="fab fa-facebook-square fa-2x"
+            className="fab fa-facebook-square fa-2x"
           ></a>
           <a
+            rel="noreferrer noopener"
             target="_blank"
             href="https://instagram.com/otaku_org?igshid=udcp29v43n4z"
-            class="fab fa-instagram fa-2x"
+            className="fab fa-instagram fa-2x"
           ></a>
           <a
+            rel="noreferrer noopener"
             target="_blank"
             href="https://twitter.com/OTAKUORGANIZAT1?s=08"
-            class="fab fa-twitter-square fa-2x"
+            className="fab fa-twitter-square fa-2x"
           ></a>
         </div>
         <div className="address">
@@ -99,19 +102,19 @@ function Footer() {
             target="_blank"
             rel="noreferrer noopener"
             href="https://www.facebook.com/Otaku-organisation-102318237915165/"
-            class="fab fa-facebook-square fa-2x"
+            className="fab fa-facebook-square fa-2x"
           ></a>
           <a
             target="_blank"
             rel="noreferrer noopener"
             href="https://instagram.com/otaku_org?igshid=udcp29v43n4z"
-            class="fab fa-instagram fa-2x"
+            className="fab fa-instagram fa-2x"
           ></a>
           <a
             target="_blank"
             rel="noreferrer noopener"
             href="https://twitter.com/OTAKUORGANIZAT1?s=08"
-            class="fab fa-twitter-square fa-2x"
+            className="fab fa-twitter-square fa-2x"
           ></a>
         </div>
       </div>
@@ -135,7 +138,7 @@ function Footer() {
         >
           <div className="privacy">
             <i
-              class="fas fa-window-close fa-lg close-btn"
+              className="fas fa-window-close fa-lg close-btn"
               onClick={closeModal}
             ></i>
             <Privacy />

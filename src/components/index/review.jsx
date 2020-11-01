@@ -30,69 +30,13 @@ const Review = props => {
       <Carousel
         withoutControls={width > 1025 ? false : true}
         renderBottomCenterControls={false}
-        heightMode={"max"}
+        heightMode={width > 1025 ? "max" : "current"}
         autoplay={true}
         autoplayInterval={4000}
         wrapAround={true}
         cellAlign={"right"}
       >
         {reviewsArray.map(createReviews)}
-        {/* <div class="review_card_outer">
-                        <div class="review_card">
-                            <img src={Avtar} class="avatar" alt="Avtar Img"/>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, consequatur, nemo illo incidunt, similique a repellat laboriosam facilis obcaecati temporibus aliquam sed unde natus? Maiores pariatur nam consectetur natus quod!</p>
-                            <h3>~~Sample Name, CSE</h3>
-                        </div>
-                    </div>
-                    <div class="review_card_outer">
-                        <div class="review_card">
-                            <img src={Avtar} class="avatar" alt="Avtar Img"/>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, consequatur, nemo illo incidunt, similique a repellat laboriosam facilis obcaecati temporibus aliquam sed unde natus? Maiores pariatur nam consectetur natus quod!</p>
-                            <h3>~~Sample Name, CSE</h3>
-                        </div>
-                    </div>
-                    <div class="review_card_outer">
-                        <div class="review_card">
-                            <img src={Avtar} class="avatar" alt="Avtar Img"/>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, consequatur, nemo illo incidunt, similique a repellat laboriosam facilis obcaecati temporibus aliquam sed unde natus? Maiores pariatur nam consectetur natus quod!</p>
-                            <h3>~~Sample Name, CSE</h3>
-                        </div>
-                    </div>
-                    <div class="review_card_outer">
-                        <div class="review_card">
-                            <img src={Avtar} class="avatar" alt="Avtar Img"/>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, consequatur, nemo illo incidunt, similique a repellat laboriosam facilis obcaecati temporibus aliquam sed unde natus? Maiores pariatur nam consectetur natus quod!</p>
-                            <h3>~~Sample Name, CSE</h3>
-                        </div>
-                    </div>
-                    <div class="review_card_outer">
-                        <div class="review_card">
-                            <img src={Avtar} class="avatar" alt="Avtar Img"/>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, consequatur, nemo illo incidunt, similique a repellat laboriosam facilis obcaecati temporibus aliquam sed unde natus? Maiores pariatur nam consectetur natus quod!</p>
-                            <h3>~~Sample Name, CSE</h3>
-                        </div>
-                    </div>
-                    <div class="review_card_outer">
-                        <div class="review_card">
-                            <img src={Avtar} class="avatar" alt="Avtar Img"/>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, consequatur, nemo illo incidunt, similique a repellat laboriosam facilis obcaecati temporibus aliquam sed unde natus? Maiores pariatur nam consectetur natus quod!</p>
-                            <h3>~~Sample Name, CSE</h3>
-                        </div>
-                    </div>
-                    <div class="review_card_outer">
-                        <div class="review_card">
-                            <img src={Avtar} class="avatar" alt="Avtar Img"/>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, consequatur, nemo illo incidunt, similique a repellat laboriosam facilis obcaecati temporibus aliquam sed unde natus? Maiores pariatur nam consectetur natus quod!</p>
-                            <h3>~~Sample Name, CSE</h3>
-                        </div>
-                    </div>
-                    <div class="review_card_outer">
-                        <div class="review_card">
-                            <img src={Avtar} class="avatar" alt="Avtar Img"/>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, consequatur, nemo illo incidunt, similique a repellat laboriosam facilis obcaecati temporibus aliquam sed unde natus? Maiores pariatur nam consectetur natus quod!</p>
-                            <h3>~~Sample Name, CSE</h3>
-                        </div>
-                    </div> */}
       </Carousel>
     </section>
   )

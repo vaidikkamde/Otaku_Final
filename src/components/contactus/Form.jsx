@@ -878,9 +878,9 @@ function Form() {
       </Helmet>
       <form onSubmit={sendEmail} autoComplete="off">
         <div className="container contactus">
-          <div class="row input-container">
-            <div class="col-xs-12">
-              <div class="styled-input wide">
+          <div className="row input-container">
+            <div className="col-xs-12">
+              <div className="styled-input wide">
                 <input
                   onChange={nameChange}
                   type="text"
@@ -891,8 +891,8 @@ function Form() {
                 <label htmlFor="name">Name</label>
               </div>
             </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="styled-input">
+            <div className="col-md-6 col-sm-12">
+              <div className="styled-input">
                 <input
                   onChange={emailChange}
                   type="text"
@@ -903,8 +903,8 @@ function Form() {
                 <label htmlFor="email">Email</label>
               </div>
             </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="styled-input" style={{ float: "right" }}>
+            <div className="col-md-6 col-sm-12">
+              <div className="styled-input" style={{ float: "right" }}>
                 <input
                   onChange={phoneChange}
                   type="text"
@@ -915,8 +915,8 @@ function Form() {
                 <label htmlFor="number">Phone Number</label>
               </div>
             </div>
-            <div class="col-xs-12">
-              <div class="styled-input wide">
+            <div className="col-xs-12">
+              <div className="styled-input wide">
                 <textarea
                   onChange={messageChange}
                   id="message"
@@ -926,8 +926,8 @@ function Form() {
                 <label htmlFor="message">Message</label>
               </div>
             </div>
-            <div class="col-xs-12">
-              <button type="submit" class="btn-lrg submit-btn">
+            <div className="col-xs-12">
+              <button type="submit" className="btn-lrg submit-btn">
                 Send Message
               </button>
             </div>

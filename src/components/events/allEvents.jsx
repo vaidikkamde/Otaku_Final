@@ -37,10 +37,10 @@ const AllEvents = props => {
       )
     } else if (array.length === 1) {
       return (
-        <section class="events">
-        <h1 class="header-pc">Upcoming Events</h1>
-        <h5 class="sub-header-pc">Click and drag to view more</h5>
-        <h5 class="sub-header-mobile">Swipe To View More</h5>
+        <section className="events">
+        <h1 className="header-pc">Upcoming Events</h1>
+        <h5 className="sub-header-pc">Click and drag to view more</h5>
+        <h5 className="sub-header-mobile">Swipe To View More</h5>
         <Carousel
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
@@ -66,10 +66,10 @@ const AllEvents = props => {
       )
     } else if (array.length === 2) {
       return (
-        <section class="events">
-        <h1 class="header-pc">Upcoming Events</h1>
-        <h5 class="sub-header-pc">Click and drag to view more</h5>
-        <h5 class="sub-header-mobile">Swipe To View More</h5>
+        <section className="events">
+        <h1 className="header-pc">Upcoming Events</h1>
+        <h5 className="sub-header-pc">Click and drag to view more</h5>
+        <h5 className="sub-header-mobile">Swipe To View More</h5>
         <Carousel
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
@@ -95,10 +95,10 @@ const AllEvents = props => {
       )
     } else {
       return (
-        <section class="events">
-        <h1 class="header-pc">Upcoming Events</h1>
-        <h5 class="sub-header-pc">Click and drag to view more</h5>
-        <h5 class="sub-header-mobile">Swipe To View More</h5>
+        <section className="events">
+        <h1 className="header-pc">Upcoming Events</h1>
+        <h5 className="sub-header-pc">Click and drag to view more</h5>
+        <h5 className="sub-header-mobile">Swipe To View More</h5>
         <Carousel
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
@@ -123,10 +123,10 @@ const AllEvents = props => {
       )
     } else if (array.length === 1) {
       return (
-        <section class="events">
-        <h1 class="header-pc">Ongoing Events</h1>
-        <h5 class="sub-header-pc">Click and drag to view more</h5>
-        <h5 class="sub-header-mobile">Swipe To View More</h5>
+        <section className="events">
+        <h1 className="header-pc">Ongoing Events</h1>
+        <h5 className="sub-header-pc">Click and drag to view more</h5>
+        <h5 className="sub-header-mobile">Swipe To View More</h5>
         <Carousel
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
@@ -152,10 +152,10 @@ const AllEvents = props => {
       )
     } else if (array.length === 2) {
       return (
-        <section class="events">
-        <h1 class="header-pc">Ongoing Events</h1>
-        <h5 class="sub-header-pc">Click and drag to view more</h5>
-        <h5 class="sub-header-mobile">Swipe To View More</h5>
+        <section className="events">
+        <h1 className="header-pc">Ongoing Events</h1>
+        <h5 className="sub-header-pc">Click and drag to view more</h5>
+        <h5 className="sub-header-mobile">Swipe To View More</h5>
         <Carousel
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
@@ -181,10 +181,10 @@ const AllEvents = props => {
       )
     } else {
       return (
-        <section class="events">
-        <h1 class="header-pc">Ongoing Events</h1>
-        <h5 class="sub-header-pc">Click and drag to view more</h5>
-        <h5 class="sub-header-mobile">Swipe To View More</h5>
+        <section className="events">
+        <h1 className="header-pc">Ongoing Events</h1>
+        <h5 className="sub-header-pc">Click and drag to view more</h5>
+        <h5 className="sub-header-mobile">Swipe To View More</h5>
         <Carousel
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
@@ -209,10 +209,10 @@ const AllEvents = props => {
       )
     } else if (array.length === 1) {
       return (
-        <section class="events">
-        <h1 class="header-pc">Past Events</h1>
-        <h5 class="sub-header-pc">Click and drag to view more</h5>
-        <h5 class="sub-header-mobile">Swipe To View More</h5>
+        <section className="events">
+        <h1 className="header-pc">Past Events</h1>
+        <h5 className="sub-header-pc">Click and drag to view more</h5>
+        <h5 className="sub-header-mobile">Swipe To View More</h5>
         <Carousel
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
@@ -238,10 +238,10 @@ const AllEvents = props => {
       )
     } else if (array.length === 2) {
       return (
-        <section class="events">
-        <h1 class="header-pc">Past Events</h1>
-        <h5 class="sub-header-pc">Click and drag to view more</h5>
-        <h5 class="sub-header-mobile">Swipe To View More</h5>
+        <section className="events">
+        <h1 className="header-pc">Past Events</h1>
+        <h5 className="sub-header-pc">Click and drag to view more</h5>
+        <h5 className="sub-header-mobile">Swipe To View More</h5>
         <Carousel
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
@@ -267,10 +267,10 @@ const AllEvents = props => {
       )
     } else {
       return (
-        <section class="events">
-        <h1 class="header-pc">Past Events</h1>
-        <h5 class="sub-header-pc">Click and drag to view more</h5>
-        <h5 class="sub-header-mobile">Swipe To View More</h5>
+        <section className="events">
+        <h1 className="header-pc">Past Events</h1>
+        <h5 className="sub-header-pc">Click and drag to view more</h5>
+        <h5 className="sub-header-mobile">Swipe To View More</h5>
         <Carousel
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}

@@ -48,10 +48,10 @@ const EventCard = props => {
   )
   return (
     <div className="event-cards">
-      <div class="event-card-outer">
-        <div class="event-card">
+      <div className="event-card-outer">
+        <div className="event-card">
           <div
-            class="image"
+            className="image"
             style={{
               background: `url(${imagePath("./" + props.eventPoster)})`,
               backgroundPosition: "top center",
@@ -63,10 +63,10 @@ const EventCard = props => {
               backgroundRepeat: "no-repeat",
             }}
           ></div>
-          <div class="content">
+          <div className="content">
             <h3>{props.eventName}</h3>
             <h5>Registration Deadline: {props.registrationDeadline}</h5>
-            <div class="registration-links">
+            <div className="registration-links">
               <a
                 style={{
                   display:
@@ -93,11 +93,11 @@ const EventCard = props => {
               >
                 <div className="eventModal">
                   <i
-                    class="fas fa-window-close fa-lg close-btn"
+                    className="fas fa-window-close fa-lg close-btn"
                     onClick={closeModal}
                   ></i>
                   <div
-                    class="modal-image"
+                    className="modal-image"
                     style={{
                       background: `url(${imagePath("./" + props.eventPoster)})`,
                       backgroundPosition: "top center",

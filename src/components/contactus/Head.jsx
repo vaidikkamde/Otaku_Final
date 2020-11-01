@@ -4,7 +4,7 @@ function Head() {
   return (
     <>
       <section
-        class="heading-gallery"
+        className="heading-gallery"
         style={{
           background: "#444442",
         }}

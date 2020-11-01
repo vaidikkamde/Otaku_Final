@@ -24,14 +24,13 @@ const Team = props => {
       <h5 class="sub-header-mobile">Swipe To View More</h5>
       <Carousel
         withoutControls={width > 1025 ? false : true}
-        renderBottomCenterControls={false}
-        heightMode={"current"}
-        autoplay={true}
-        autoplayInterval={5000}
+        renderBottomCenterControls={true}
+        heightMode={"max"}
+        autoplay={false}
         wrapAround={false}
         cellAlign={"left"}
         slidesToShow={width > 1025 ? 3 : 1}
-        slidesToScroll={1}
+        slidesToScroll={width > 1025 ? 3 : 1}
       >
         {membersArray.map(createMembers)}
       </Carousel>
