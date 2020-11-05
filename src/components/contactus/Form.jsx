@@ -27,9 +27,9 @@ function Form() {
     console.log(phone)
     console.log(message)
     window.Email.send({
-      SecureToken: process.env.GATSBY_ENCRYPT,
-      To: process.env.GATSBY_CEO_USERNAME,
-      From: process.env.GATSBY_NOREPLY_USERNAME,
+      SecureToken: "019ab92a-0f6f-4328-a5c4-bd301a0f0516",
+      To: "otakuorg.ceo@gmail.com",
+      From: "otaku.noreply@gmail.com",
       Subject: `You have a message from ${name}`,
       Body: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -566,9 +566,9 @@ function Form() {
       }
     })
     window.Email.send({
-      SecureToken: process.env.GATSBY_ENCRYPT,
+      SecureToken: "019ab92a-0f6f-4328-a5c4-bd301a0f0516",
       To: `${email}`,
-      From: process.env.GATSBY_NOREPLY_USERNAME,
+      From: "otaku.noreply@gmail.com",
       Subject: "Thank you for contacting us",
       Body: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 

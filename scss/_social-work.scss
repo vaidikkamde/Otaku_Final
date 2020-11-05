@@ -24,6 +24,7 @@
       padding-right: 1rem;
       display: flex;
       flex-direction: column;
+      width: 50%;
       .donate {
         color: $text-color;
         background: #000;
@@ -34,11 +35,18 @@
     }
     video {
       padding-left: 1rem;
-      width: 500px;
+      width: 40%;
     }
   }
 }
-@media screen and (max-width: 600px) {
+@media(min-width:1599px){
+    .contents{
+      p{
+        font-size: 1.5rem;
+      }
+    }
+}
+@media screen and (max-width: 1023px) {
   .social-work {
     h1 {
       font-size: 1.5rem;
@@ -48,9 +56,11 @@
       padding: 0 2rem;
       p {
         padding: 0;
+        width: 100%;
       }
       video {
         padding: 1rem 0;
+        width: 100%;
       }
     }
   }

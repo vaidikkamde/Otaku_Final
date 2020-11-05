@@ -1,0 +1,87 @@
+.achivements{
+    height: fit-content;
+    width:100vw;
+    background: $text-color;
+    .achivementHead{
+        width: 100%;
+        text-align: center;
+        font-size: 4rem;
+        font-family: $Elinato;
+        padding-top: 2rem;
+    }
+    .rows{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        .col-1,.col-2{
+            .parcipantsNum,.eventNum,.liveinteractionNum,.teamNum{
+                margin: 2rem 0;
+            }
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height:100%;
+            margin: 2rem 0;
+            font-family: Poppins,sans-serif;
+            h1{
+                text-align: center;
+                font-size: 3rem;
+                background: linear-gradient(
+                    90deg,
+                    rgba(131, 58, 180, 1) 0%,
+                    rgba(253, 29, 29, 1) 50%,
+                    rgba(252, 176, 69, 1) 100%
+                  );
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+            }
+            h2{
+                text-align: center;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+@media (min-width:1441px){
+    .achivements{
+        .achivementHead{
+            font-size: 5.5rem;
+        }
+        .rows{
+            width: 100%;
+            .col-1,.col-2{
+                width: 50%;
+                flex-direction: row;
+                h1{
+                    font-size: 6rem;
+                }
+                h2{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px){
+    .achivements{
+        .achivementHead{
+            font-size: 2.25rem;
+        }
+        .rows{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .col-1,.col-2{
+                margin: 0;
+                .parcipantsNum,.eventNum,.liveinteractionNum,.teamNum{
+                    margin: 1rem 0;
+                }
+            }
+        }
+    }
+}

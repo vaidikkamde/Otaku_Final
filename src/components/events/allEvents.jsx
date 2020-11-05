@@ -45,12 +45,12 @@ const AllEvents = props => {
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
           heightMode={"max"}
-          autoplay={true}
+          autoplay={false}
           autoplayInterval={5000}
           wrapAround={false}
           cellAlign={"left"}
-          slidesToShow={width > 1025 ? 3 : 1}
-          slidesToScroll={1}
+          slidesToShow={width > 1025 ? 3 :(width < 767? 1:2)}
+          slidesToScroll={width > 1025 ? 3 :(width < 767? 1:2)}
         >
           {array.map(genrateCards)}
           {nullValues.map((nullValue, index) => {
@@ -74,12 +74,12 @@ const AllEvents = props => {
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
           heightMode={"max"}
-          autoplay={true}
+          autoplay={false}
           autoplayInterval={5000}
           wrapAround={false}
           cellAlign={"left"}
-          slidesToShow={width > 1025 ? 3 : 1}
-          slidesToScroll={1}
+          slidesToShow={width > 1025 ? 3 :(width < 767? 1:2)}
+          slidesToScroll={width > 1025 ? 3 :(width < 767? 1:2)}
         >
           {array.map(genrateCards)}
           {nullValues.map((nullValue, index) => {
@@ -103,12 +103,12 @@ const AllEvents = props => {
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
           heightMode={"max"}
-          autoplay={true}
+          autoplay={false}
           autoplayInterval={5000}
           wrapAround={false}
           cellAlign={"left"}
-          slidesToShow={width > 1025 ? 3 : 1}
-          slidesToScroll={1}
+          slidesToShow={width > 1025 ? 3 :(width < 767? 1:2)}
+          slidesToScroll={width > 1025 ? 3 :(width < 767? 1:2)}
         >
           {array.map(genrateCards)}
         </Carousel>
@@ -131,12 +131,12 @@ const AllEvents = props => {
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
           heightMode={"max"}
-          autoplay={true}
+          autoplay={false}
           autoplayInterval={5000}
           wrapAround={false}
           cellAlign={"left"}
-          slidesToShow={width > 1025 ? 3 : 1}
-          slidesToScroll={1}
+          slidesToShow={width > 1025 ? 3 :(width < 767? 1:2)}
+          slidesToScroll={width > 1025 ? 3 :(width < 767? 1:2)}
         >
           {array.map(genrateCards)}
           {nullValues.map((nullValue, index) => {
@@ -160,12 +160,12 @@ const AllEvents = props => {
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
           heightMode={"max"}
-          autoplay={true}
+          autoplay={false}
           autoplayInterval={5000}
           wrapAround={false}
           cellAlign={"left"}
-          slidesToShow={width > 1025 ? 3 : 1}
-          slidesToScroll={1}
+          slidesToShow={width > 1025 ? 3 :(width < 767? 1:2)}
+          slidesToScroll={width > 1025 ? 3 :(width < 767? 1:2)}
         >
           {array.map(genrateCards)}
           {nullValues.map((nullValue, index) => {
@@ -189,12 +189,12 @@ const AllEvents = props => {
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
           heightMode={"max"}
-          autoplay={true}
+          autoplay={false}
           autoplayInterval={5000}
           wrapAround={false}
           cellAlign={"left"}
-          slidesToShow={width > 1025 ? 3 : 1}
-          slidesToScroll={1}
+          slidesToShow={width > 1025 ? 3 :(width < 767? 1:2)}
+          slidesToScroll={width > 1025 ? 3 :(width < 767? 1:2)}
         >
           {array.map(genrateCards)}
         </Carousel>
@@ -217,12 +217,12 @@ const AllEvents = props => {
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
           heightMode={"max"}
-          autoplay={true}
+          autoplay={false}
           autoplayInterval={5000}
           wrapAround={false}
           cellAlign={"left"}
-          slidesToShow={width > 1025 ? 3 : 1}
-          slidesToScroll={1}
+          slidesToShow={width > 1025 ? 3 :(width < 767? 1:2)}
+          slidesToScroll={width > 1025 ? 3 :(width < 767? 1:2)}
         >
           {array.map(genrateCards)}
           {nullValues.map((nullValue, index) => {
@@ -246,12 +246,12 @@ const AllEvents = props => {
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
           heightMode={"max"}
-          autoplay={true}
+          autoplay={false}
           autoplayInterval={5000}
           wrapAround={false}
           cellAlign={"left"}
-          slidesToShow={width > 1025 ? 3 : 1}
-          slidesToScroll={1}
+          slidesToShow={width > 1025 ? 3 :(width < 767? 1:2)}
+          slidesToScroll={width > 1025 ? 3 :(width < 767? 1:2)}
         >
           {array.map(genrateCards)}
           {nullValues.map((nullValue, index) => {
@@ -275,12 +275,12 @@ const AllEvents = props => {
           withoutControls={width > 1025 ? false : true}
           renderBottomCenterControls={false}
           heightMode={"max"}
-          autoplay={true}
+          autoplay={false}
           autoplayInterval={5000}
           wrapAround={false}
           cellAlign={"left"}
-          slidesToShow={width > 1025 ? 3 : 1}
-          slidesToScroll={1}
+          slidesToShow={width > 1025 ? 3 :(width < 767? 1:2)}
+          slidesToScroll={width > 1025 ? 3 :(width < 767? 1:2)}
         >
           {array.map(genrateCards)}
         </Carousel>

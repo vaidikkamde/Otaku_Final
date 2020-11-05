@@ -81,6 +81,12 @@ function Footer() {
             href="https://twitter.com/OTAKUORGANIZAT1?s=08"
             className="fab fa-twitter-square fa-2x"
           ></a>
+          <a
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://www.linkedin.com/company/otaku-organization"
+            className="fab fa-linkedin fa-2x"
+          ></a>
         </div>
         <div className="address">
           <h2>Visit Us</h2>
@@ -115,6 +121,12 @@ function Footer() {
             rel="noreferrer noopener"
             href="https://twitter.com/OTAKUORGANIZAT1?s=08"
             className="fab fa-twitter-square fa-2x"
+          ></a>
+          <a
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://www.linkedin.com/company/otaku-organization"
+            className="fab fa-linkedin fa-2x"
           ></a>
         </div>
       </div>

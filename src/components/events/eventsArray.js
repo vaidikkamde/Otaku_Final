@@ -14,7 +14,7 @@
 const eventsArray = [
   {
     eventPoster: "ROBORUN.jpg",
-    registrationDeadline: "November 16 2020",
+    registrationDeadline: "November 10 2020",
     registrationLink: "http://tiny.cc/joinourworkshop",
     eventName: "ROBOrun - make your own robot",
     eventDescription:
@@ -24,6 +24,32 @@ const eventsArray = [
     eventDate: "Nov 16 2020 to Nov 17 2020",
     eventTimings: "5:00 P.M Onwards",
     RegistrationFees: "Null other than the kit charges Mentioned Above",
+  },
+  {
+    eventPoster:"ENIGMA.jpeg",
+    registrationDeadline:"October 05 2020",
+    registrationLink:"http://shortto.com/enigma2k20",
+    eventName:"Enigma",
+    eventDescription:'<p>Student organization OTAKU under the aegis of division of student welfare, lovely professional university is again back with a bang!</p><p>ENIGMA is a mixture of several events which will start on same day. This event will continue for a month. Results will be out on October 2020.</p><p>The events list :<br />1. Brain Writing:<br />2. Quiz competition : <br />3. Drawing Competition:<br />4. Fitness Freak:<br />5. Modelling Competition: <br />6. Photography Competition:<br />7. Programming Competition :<br />8. Calligraphy Competition :<br />9. Art from waste material :<br />10. Shayari Competition :<br />11. Poem writing competition :<br />12. Dancing competition<br />13. Laughter competition<br />14. Cooking Competition :<br />15. Best reels competition:</p><p>One person can participate in more than 2 events.</p><p>Registration fee : 20/- per person per event (for example, if a person wants to participate in 3 events he needs to <br /> pay 60/- )<br />Payment : 9603452480 ( PayTM , GPAY , PhonePay )</p><p>For Queries :</p><p>Akash : 7989400694<br />Spandana : 6283669793<br />Dhruva : 9603452480</p><p>Mail us : otakustream007@gmail.com</p>',
+    eventStartDate:"September 07 2020",
+    eventEndDate:"October 07 2020",
+    eventDate:"Sept 06 to Oct 07 2020",
+    eventTimings:"Timings will be let you known a day before the Competition",
+    RegistrationFees:"Registration fee : 20/- per person per event (for example, if a person wants to participate in 3 events he needs to pay 60/- )"
+
+},
+  {
+    eventPoster: "ALUMNI.jpg",
+    registrationDeadline: "July 25 2020",
+    registrationLink: "https://www.google.com",
+    eventName: "Alumni Talks",
+    eventDescription:
+      '<p>Student organization OTAKU under the aegis of Division of Student Welfare Lovely Professional University is going to organize alumni talks<br />This webinar &ldquo;Alumni Talks &rdquo; is taught by Ms. Mandeep Kaur Sidhu. She is entrepreneur, founder and CEO of SimbaQuartz ,<br />Simbacart &amp; NGO smiles Care located in Tangra , Punjab.<br />She is an MBA Graduate and University topper for LPU.<br />The main topics will be covered are:</p><ol><li>Starting with introduction</li><li>How college atmosphere will affect us, and opportunities provided by LPU</li><li>What are the adjustments you have made during your college days</li><li>How did you enjoyed the college life and what inspired you to become topper of the university</li><li>The extra-curricular activities in which you have participated and how to take advantage of these clubs in our life</li><li>Memorries gave by LPU and best cherished moments in LPU</li><li>How LPU supported you in becoming as best emerging entrepreneur</li><li>Doubt clearing session by Freshmen</li></ol><p>Venue - <span style="text-decoration: underline;"><a href="https://instagram.com/divisionofstudentwelfare?igshid=1onxlfrv3mg0">https://instagram.com/divisionofstudentwelfare?igshid=1onxlfrv3mg0</a></span></p>',
+    eventStartDate: "July 25 2020",
+    eventEndDate: "July 26 2020",
+    eventDate: "Oct 26 2020",
+    eventTimings: "5:00 P.M to 7:00 P.M",
+    registrationFees: "Rs -/ 100",
   },
   {
     eventPoster: "JOURNEY.jpg",
@@ -37,19 +63,6 @@ const eventsArray = [
     eventDate: "Jul 26 2020",
     eventTimings: "5:00 P.M to 6:00 P.M",
     RegistrationFees: "Rs -/ 20",
-  },
-  {
-    eventPoster: "ALUMNI.jpg",
-    registrationDeadline: "July 25 2020",
-    registrationLink: "https://www.google.com",
-    eventName: "Enigma",
-    eventDescription:
-      '<p>Student organization OTAKU under the aegis of Division of Student Welfare Lovely Professional University is going to organize alumni talks<br />This webinar &ldquo;Alumni Talks &rdquo; is taught by Ms. Mandeep Kaur Sidhu. She is entrepreneur, founder and CEO of SimbaQuartz ,<br />Simbacart &amp; NGO smiles Care located in Tangra , Punjab.<br />She is an MBA Graduate and University topper for LPU.<br />The main topics will be covered are:</p><ol><li>Starting with introduction</li><li>How college atmosphere will affect us, and opportunities provided by LPU</li><li>What are the adjustments you have made during your college days</li><li>How did you enjoyed the college life and what inspired you to become topper of the university</li><li>The extra-curricular activities in which you have participated and how to take advantage of these clubs in our life</li><li>Memorries gave by LPU and best cherished moments in LPU</li><li>How LPU supported you in becoming as best emerging entrepreneur</li><li>Doubt clearing session by Freshmen</li></ol><p>Venue - <span style="text-decoration: underline;"><a href="https://instagram.com/divisionofstudentwelfare?igshid=1onxlfrv3mg0">https://instagram.com/divisionofstudentwelfare?igshid=1onxlfrv3mg0</a></span></p>',
-    eventStartDate: "July 25 2020",
-    eventEndDate: "July 26 2020",
-    eventDate: "Oct 26 2020",
-    eventTimings: "5:00 P.M to 7:00 P.M",
-    registrationFees: "Rs -/ 100",
   },
   {
     eventPoster: "TAMBOLA.jpg",

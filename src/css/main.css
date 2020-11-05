@@ -751,6 +751,32 @@ footer .links .social-links-mobile .fa-2x:hover {
   color: blue;
 }
 
+footer .links .social-links-pc .fa-instagram:hover,
+footer .links .social-links-mobile .fa-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer .links .social-links-pc .fa-facebook-square:hover,
+footer .links .social-links-mobile .fa-facebook-square:hover {
+  color: #4267B2;
+}
+
+footer .links .social-links-pc .fa-twitter-square:hover,
+footer .links .social-links-mobile .fa-twitter-square:hover {
+  color: #1DA1F2;
+}
+
+footer .links .social-links-pc .fa-linkedin:hover,
+footer .links .social-links-mobile .fa-linkedin:hover {
+  color: #2867B2;
+}
+
+footer .links .social-links-pc {
+  padding: 0 1rem;
+}
+
 footer .links .social-links-mobile {
   display: none;
 }
@@ -857,7 +883,7 @@ footer .madeBy a:hover {
   }
   footer .links .social-links-mobile .fa-2x {
     padding: 1rem;
-    font-size: 2.5rem !important;
+    font-size: 1.95rem !important;
   }
   footer .links .footer-links {
     padding-bottom: 1rem;
@@ -941,12 +967,15 @@ footer .madeBy a:hover {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1025px) {
   .hero .column {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
             flex: 50%;
     max-width: 50%;
+  }
+  .heading-gallery h1 {
+    font-size: 5rem;
   }
 }
 
@@ -960,6 +989,9 @@ footer .madeBy a:hover {
   }
   .hero .row {
     padding: 2rem 1.5rem;
+  }
+  .heading-gallery h1 {
+    font-size: 3.5rem;
   }
 }
 
@@ -1019,6 +1051,7 @@ footer .madeBy a:hover {
 }
 
 .head .content .latest-events {
+  will-change: position;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1063,6 +1096,7 @@ footer .madeBy a:hover {
 }
 
 .head .scroll-btn-container span {
+  will-change: position;
   padding: 2.8rem 2.2rem;
   border-radius: 100%;
   background: #f4f4f4;
@@ -1116,11 +1150,11 @@ nav ul li {
   display: inline-block;
   line-height: 65px;
   margin: 0 5px;
+  font-size: 1.25rem;
 }
 
 nav ul li a {
   color: #f4f4f4;
-  font-size: 1.25rem;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
@@ -1384,16 +1418,19 @@ nav ul li a {
     font-size: 1.5rem;
   }
   .team-cards {
-    height: 40vh !important;
+    height: 60vh !important;
   }
   .team-cards h2 {
-    font-size: 2.5rem !important;
+    font-size: 3.5rem !important;
   }
   .team-cards h4 {
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
   }
-  .team-cards .fa-2x {
-    font-size: 3rem;
+  .team-cards .social-links {
+    font-size: 2rem;
+  }
+  .team-cards .social-links .fa-2x {
+    font-size: 3.5rem;
   }
   .header-pc {
     font-size: 3rem;
@@ -1572,6 +1609,16 @@ nav ul li a {
   .latest-events {
     top: 60vh !important;
     font-size: 2vh !important;
+  }
+  .team .sub-header-mobile {
+    display: block !important;
+  }
+  .team .sub-header-mobile {
+    text-align: center;
+    margin-bottom: 1vh;
+  }
+  .team .sub-header-pc {
+    display: none;
   }
   .reviews .header-mobile,
   .reviews .sub-header-mobile {
@@ -1799,6 +1846,7 @@ nav ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 50%;
 }
 
 .social-work .contents p .donate {
@@ -1813,10 +1861,16 @@ nav ul li a {
 
 .social-work .contents video {
   padding-left: 1rem;
-  width: 500px;
+  width: 40%;
 }
 
-@media screen and (max-width: 600px) {
+@media (min-width: 1599px) {
+  .contents p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
   .social-work h1 {
     font-size: 1.5rem;
   }
@@ -1829,9 +1883,11 @@ nav ul li a {
   }
   .social-work .contents p {
     padding: 0;
+    width: 100%;
   }
   .social-work .contents video {
     padding: 1rem 0;
+    width: 100%;
   }
 }
 
@@ -2310,6 +2366,121 @@ nav ul li a {
 
 .about-us .blur .background-links .clip-path .foreground-links {
   display: none;
+}
+
+.achivements {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100vw;
+  background: #f4f4f4;
+}
+
+.achivements .achivementHead {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "eliantoregular";
+  padding-top: 2rem;
+}
+
+.achivements .rows {
+  width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.achivements .rows .col-1, .achivements .rows .col-2 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  margin: 2rem 0;
+  font-family: Poppins,sans-serif;
+}
+
+.achivements .rows .col-1 .parcipantsNum, .achivements .rows .col-1 .eventNum, .achivements .rows .col-1 .liveinteractionNum, .achivements .rows .col-1 .teamNum, .achivements .rows .col-2 .parcipantsNum, .achivements .rows .col-2 .eventNum, .achivements .rows .col-2 .liveinteractionNum, .achivements .rows .col-2 .teamNum {
+  margin: 2rem 0;
+}
+
+.achivements .rows .col-1 h1, .achivements .rows .col-2 h1 {
+  text-align: center;
+  font-size: 3rem;
+  background: -webkit-gradient(linear, left top, right top, from(#833ab4), color-stop(50%, #fd1d1d), to(#fcb045));
+  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.achivements .rows .col-1 h2, .achivements .rows .col-2 h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media (min-width: 1441px) {
+  .achivements .achivementHead {
+    font-size: 5.5rem;
+  }
+  .achivements .rows {
+    width: 100%;
+  }
+  .achivements .rows .col-1, .achivements .rows .col-2 {
+    width: 50%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .achivements .rows .col-1 h1, .achivements .rows .col-2 h1 {
+    font-size: 6rem;
+  }
+  .achivements .rows .col-1 h2, .achivements .rows .col-2 h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .achivements .achivementHead {
+    font-size: 2.25rem;
+  }
+  .achivements .rows {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .achivements .rows .col-1, .achivements .rows .col-2 {
+    margin: 0;
+  }
+  .achivements .rows .col-1 .parcipantsNum, .achivements .rows .col-1 .eventNum, .achivements .rows .col-1 .liveinteractionNum, .achivements .rows .col-1 .teamNum, .achivements .rows .col-2 .parcipantsNum, .achivements .rows .col-2 .eventNum, .achivements .rows .col-2 .liveinteractionNum, .achivements .rows .col-2 .teamNum {
+    margin: 1rem 0;
+  }
 }
 
 .stop-scrolling {

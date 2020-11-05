@@ -4,18 +4,12 @@ module.exports = {
     title: `OTAKU`,
     description: `Otaku is Student Organization under divison of student welfare at Lovely Professional University. It hosts Events and workshops for students.`,
     author: `@Student Org Otaku`,
+    siteUrl: `https://otakuorg.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-plugin-advanced-sitemap`,
+    'gatsby-plugin-robots-txt',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

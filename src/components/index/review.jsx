@@ -34,7 +34,7 @@ const Review = props => {
         autoplay={width > 1025 ? true : false}
         autoplayInterval={4000}
         wrapAround={true}
-        cellAlign={"right"}
+        cellAlign={"left"}
       >
         {reviewsArray.map(createReviews)}
       </Carousel>
