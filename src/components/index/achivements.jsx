@@ -10,10 +10,9 @@ function Achivements(props) {
         <div className="col-1">
           <CountUp
             start={0}
-            end={100}
+            end={5000}
             duration={3}
-            separator=" "
-            decimal=","
+            separator=","
             suffix="+"
           >
             {({ countUpRef, start}) => (
@@ -30,7 +29,7 @@ function Achivements(props) {
           <CountUp
             start={0}
             end={30}
-            duration={2}
+            duration={5}
             separator=" "
             decimal=","
             suffix="+"
@@ -50,8 +49,8 @@ function Achivements(props) {
         <div className="col-2">
         <CountUp
             start={0}
-            end={10}
-            duration={2}
+            end={100000}
+            duration={3}
             suffix="+"
           >
             {({ countUpRef, start}) => (
@@ -60,7 +59,7 @@ function Achivements(props) {
               }}>
               <div className="liveinteractionNum">
                 <h1 ref={countUpRef} />
-                <h2>Live Interactions</h2>
+                <h2>Views On Live Interactions</h2>
               </div>
               </VisibilitySensor>
             )}
@@ -68,7 +67,7 @@ function Achivements(props) {
           <CountUp
             start={0}
             end={60}
-            duration={2}
+            duration={5}
           >
             {({ countUpRef, start}) => (
               <VisibilitySensor onChange={(isVisible)=>{

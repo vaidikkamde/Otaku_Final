@@ -885,6 +885,20 @@ footer .madeBy a:hover {
     padding: 1rem;
     font-size: 1.95rem !important;
   }
+  footer .links .social-links-mobile .fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  footer .links .social-links-mobile .fa-facebook-square {
+    color: #4267B2;
+  }
+  footer .links .social-links-mobile .fa-twitter-square {
+    color: #1DA1F2;
+  }
+  footer .links .social-links-mobile .fa-linkedin {
+    color: #2867B2;
+  }
   footer .links .footer-links {
     padding-bottom: 1rem;
   }
@@ -2476,7 +2490,8 @@ nav ul li a {
             justify-content: center;
   }
   .achivements .rows .col-1, .achivements .rows .col-2 {
-    margin: 0;
+    margin: 1rem;
+    width: 100%;
   }
   .achivements .rows .col-1 .parcipantsNum, .achivements .rows .col-1 .eventNum, .achivements .rows .col-1 .liveinteractionNum, .achivements .rows .col-1 .teamNum, .achivements .rows .col-2 .parcipantsNum, .achivements .rows .col-2 .eventNum, .achivements .rows .col-2 .liveinteractionNum, .achivements .rows .col-2 .teamNum {
     margin: 1rem 0;

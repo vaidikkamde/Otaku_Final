@@ -3,11 +3,12 @@ const imagePath = name => images(name, true)
 function Image(imageName) {
   return `${imagePath("./" + imageName)}`
 }
-const numberOfImages=6
+const numberOfImages=33
 const PhotosArray = [];
-for(let i=numberOfImages;i>0;i--){
+for(let i=1;i<=numberOfImages;i++){
   PhotosArray.push({
-    src:`${Image(`${i}.jpeg`)}`
+    src:`${Image(`${i}.jpg`)}`
   })
+  console.log(images)
 }
 export default PhotosArray

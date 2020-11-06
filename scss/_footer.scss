@@ -144,6 +144,22 @@ footer {
           padding: 1rem;
           font-size: 1.95rem !important;
         }
+        .fa-instagram{
+          background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+    
+        .fa-facebook-square{
+          color:#4267B2;
+        }
+        .fa-twitter-square{
+          color:#1DA1F2;
+        }
+        .fa-linkedin{
+          color:#2867B2;
+        }
+               
       }
       .footer-links {
         padding-bottom: 1rem;
