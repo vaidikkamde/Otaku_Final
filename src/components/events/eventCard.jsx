@@ -9,7 +9,9 @@ const images = require.context("../../images/events", true)
 const imagePath = name => images(name, true)
 Modal.setAppElement(`#___gatsby`)
 const EventCard = props => {
-  let today = new Date()
+  let today = new Date();
+  let deadline = new Date(props.registrationDeadline)
+  deadline.setDate(deadline.getDate() + 1)
   const customStyles = {
     content: {
       top: "55%",
@@ -39,13 +41,6 @@ const EventCard = props => {
     setIsOpen(false)
     document.body.classList.remove("stop-scrolling")
   }
-  console.log(
-    props.eventPoster,
-    props.eventName,
-    props.eventCategory,
-    props.registrationDeadline,
-    props.registrationLink
-  )
   return (
     <div className="event-cards">
       <div className="event-card-outer">
@@ -70,7 +65,7 @@ const EventCard = props => {
               <a
                 style={{
                   display:
-                    today < new Date(props.registrationDeadline)
+                    today < deadline
                       ? "block"
                       : "none",
                 }}
@@ -115,10 +110,10 @@ const EventCard = props => {
                     {ReactHtmlParser(props.eventDescription)}
                   </p>
                   <br />
-                  <h4 className="modal-days">{props.eventDate}</h4>
+                  <h4 className="modal-days">{ReactHtmlParser(props.eventDate)}</h4>
                   <h4 className="modal-timings">{props.eventTimings}</h4>
                   <h4 className="registration-fees">
-                    {props.registrationFees}
+                    {ReactHtmlParser(props.registrationFees)}
                   </h4>
                   <a
                     href={props.registrationLink}
@@ -126,7 +121,7 @@ const EventCard = props => {
                     target="_blank"
                     style={{
                       display:
-                        today < new Date(props.registrationDeadline)
+                        today <= deadline
                           ? "block"
                           : "none",
                     }}

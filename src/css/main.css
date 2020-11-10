@@ -1693,6 +1693,8 @@ nav ul li a {
 .eventModal .modal-heading {
   font-size: 2rem;
   padding: 0.5rem 0;
+  text-align: center;
+  width: 30rem;
 }
 
 .eventModal .modal-subHeading {
