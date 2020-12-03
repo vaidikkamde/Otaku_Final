@@ -8,10 +8,24 @@
 //     eventEndDate:"November 03 2020",
 //     eventDate:"Oct 29 2020",
 //     eventTimings:"5:00 P.M to 6:00 P.M",
-//     RegistrationFees:"Rs -/ 20 or nill"
+//     registrationFees:"Rs -/ 20 or nill"
 
 // },
 const eventsArray = [
+  {
+    eventPoster: "self_worth.jpeg",
+    registrationDeadline: "December 14 2020",
+    registrationLink: "https://www.shortto.com/fmcourse",
+    eventName: "Self Worth (Financial Marketing)",
+    eventDescription:
+      '<p>Student organization OTAKU on collaboration with innovators and you under the aegis of Division of Student Welfare, Lovely Professional University is organizing a workshop on <strong>Self Worth (financial marketing)</strong></p><p><br />Topics covered in this workshop <br />1) Share market<br />2) Live Trading <br />3) Derivates <br />4) Algorithm &amp; HFT trading <br />5) portfolio management <br />6) Insurance<br />7) Banking <br />8) Mutual fund awareness</p><p><em>Duration of workshop is <span style="text-decoration: underline;">15 days.</span> Time is allocated based on your free slots</em></p><p>Perks -<br />1) <strong>If you are not comfortable on the workshop then do mention us on first day of workshop. the whole amount will be refunded to you on first day itself</strong></p><p>2) E- certificate will be provided to each and every participant through company</p><p>3) Doubt clearing session will be there for life time period. </p><p>4) Live interactive sessions with live practical examples</p><p>5) Mobile application on which you can practice virtually in real time without investment </p><p>6)Back up class will be provided on request</p><p>&nbsp;</p><p><strong>Reg fee</strong> - <em>Rs 1000/-</em></p><p><strong>Phonepay/googlepay/paytm</strong> - <em>9603452480</em></p><p>Any queries<br />Mail us on - otakustream007@gmail.com</p><p>Spandana - 6283648454<br />Dhruva - 9603452480</p>',
+    eventStartDate: "December 14 2020",
+    eventEndDate: "December 29 2020",
+    eventDate: "Dec 14 2020 to Dec 29 2020",
+    eventTimings: "Will be shared with you before the event",
+    registrationFees: "Rs 1000/-",
+  }
+  ,
   {
     eventPoster: "ROBORUN.jpg",
     registrationDeadline: "November 10 2020",
@@ -23,7 +37,7 @@ const eventsArray = [
     eventEndDate: "November 17 2020",
     eventDate: "Nov 16 2020 to Nov 17 2020",
     eventTimings: "5:00 P.M Onwards",
-    RegistrationFees: "Null other than the kit charges Mentioned Above",
+    registrationFees: "Null other than the kit charges Mentioned Above",
   },
   {
     eventPoster:"ENIGMA.jpeg",
@@ -35,7 +49,7 @@ const eventsArray = [
     eventEndDate:"October 07 2020",
     eventDate:"Sept 06 to Oct 07 2020",
     eventTimings:"Timings will be let you known a day before the Competition",
-    RegistrationFees:"Registration fee : 20/- per person per event (for example, if a person wants to participate in 3 events he needs to pay 60/- )"
+    registrationFees:"Registration fee : 20/- per person per event (for example, if a person wants to participate in 3 events he needs to pay 60/- )"
 
   },
   {
@@ -48,7 +62,7 @@ const eventsArray = [
     eventEndDate:"August 31 2020",
     eventDate:"August 30 2020",
     eventTimings:"1:00 P.M Onwards",
-    RegistrationFees:"Rs -/ 100"
+    registrationFees:"Rs -/ 100"
 
   },
   {
@@ -61,7 +75,7 @@ const eventsArray = [
     eventEndDate:"August 13 2020",
     eventDate:'<div><div>Brainaholic&nbsp;Bandits&nbsp;10th&nbsp;Aug,&nbsp;2020</div><div>&nbsp;</div><div>Interaction&nbsp;with&nbsp;HOD&nbsp;11th&nbsp;Aug,&nbsp;2020</div><div>&nbsp;</div><div>Spotlight&nbsp;Fight&nbsp;12th&nbsp;Aug,2020</div><div>&nbsp;</div><div>Artsy&nbsp;Lens&nbsp;2.0&nbsp;13th&nbsp;Aug,&nbsp;2020<p>&nbsp;</p></div></div>',
     eventTimings:"Would Be Shared A Day Before The Event",
-    RegistrationFees:"Null"
+    registrationFees:"Null"
 
   },
   {
@@ -88,7 +102,7 @@ const eventsArray = [
     eventEndDate: "July 27 2020",
     eventDate: "Jul 26 2020",
     eventTimings: "5:00 P.M to 6:00 P.M",
-    RegistrationFees: "Rs -/ 20",
+    registrationFees: "Rs -/ 20",
   },
   {
     eventPoster:"GRIZZLY.jpg",
@@ -100,7 +114,7 @@ const eventsArray = [
     eventEndDate:"July 19 2020",
     eventDate:"July 18 2020",
     eventTimings:"5:00 P.M Onwards",
-    RegistrationFees:"Null"
+    registrationFees:"Null"
 
   },
   {
@@ -113,7 +127,7 @@ const eventsArray = [
     eventEndDate:"June 03 2020",
     eventDate:"June 02 2020",
     eventTimings:"5:30 P.M to 8:00 P.M",
-    RegistrationFees:"Rs -/ 10 Per Person"
+    registrationFees:"Rs -/ 10 Per Person"
 
   },
   {
@@ -126,7 +140,7 @@ const eventsArray = [
     eventEndDate:"May 16 2020",
     eventDate:"May 15 2020",
     eventTimings:"5:00 P.M to 7:00 P.M",
-    RegistrationFees:"Rs -/ 30 Per Person"
+    registrationFees:"Rs -/ 30 Per Person"
 
   },
   {
@@ -139,7 +153,7 @@ const eventsArray = [
     eventEndDate:"May 11 2020",
     eventDate:"May 10 2020",
     eventTimings:"5:30 P.M to 6:30 P.M",
-    RegistrationFees:"Rs -/ 20 Per Person"
+    registrationFees:"Rs -/ 20 Per Person"
 
   },
   {
@@ -153,7 +167,7 @@ const eventsArray = [
     eventEndDate: "May 01 2020",
     eventDate: "May 01 2020",
     eventTimings: "6:00 P.M Onwards",
-    RegistrationFees: "Rs -/ 10 Per Ticket",
+    registrationFees: "Rs -/ 10 Per Ticket",
   },
   {
     eventPoster:"ARTSY.jpg",
@@ -165,7 +179,7 @@ const eventsArray = [
     eventEndDate:"April 26 2020",
     eventDate:"Last Date To Submit April 25 2020",
     eventTimings:"",
-    RegistrationFees:"Null"
+    registrationFees:"Null"
 
   },
   {
@@ -178,7 +192,7 @@ const eventsArray = [
     eventEndDate:"April 14 2020",
     eventDate:"<p>Ludo &ndash; 10th April<br />Pubg &ndash; 12th April<br />COD &ndash; 14th April</p>",
     eventTimings:"Timings would be communicated through Whatsapp Groups ",
-    RegistrationFees:"<p><strong>Registration fee:-</strong><br />Ludo king :- 10/- per head<br />Pubg :- Solo - 20/- per head<br /> Duo - 30/- per team<br /> Squad- 50/- per team<br />Call of duty (COD) :- 10/- per head</p>"
+    registrationFees:"<p><strong>Registration fee:-</strong><br />Ludo king :- 10/- per head<br />Pubg :- Solo - 20/- per head<br /> Duo - 30/- per team<br /> Squad- 50/- per team<br />Call of duty (COD) :- 10/- per head</p>"
 
   },
   {
@@ -191,7 +205,7 @@ const eventsArray = [
     eventEndDate:"April 06 2020",
     eventDate:"Last Date To Submit April 05 2020",
     eventTimings:"Results Will Be Declared On April 06 2020",
-    RegistrationFees:"NULL"
+    registrationFees:"NULL"
 
   },
   {
@@ -204,7 +218,7 @@ const eventsArray = [
     eventEndDate:"February 22 2020",
     eventDate:"Feb 17 2020 to Feb 20 2020",
     eventTimings:"5:00 P.M to 7:00 P.M",
-    RegistrationFees:"Rs -/ 350 Per Person"
+    registrationFees:"Rs -/ 350 Per Person"
 
   },
   {
@@ -217,7 +231,7 @@ const eventsArray = [
     eventEndDate:"February 12 2020",
     eventDate:"Feb 01 2020 to Feb 12 2020",
     eventTimings:"5:00 P.M to 8:00 P.M",
-    RegistrationFees:"Rs -/ 200 Per Person"
+    registrationFees:"Rs -/ 200 Per Person"
 
 },
 ]

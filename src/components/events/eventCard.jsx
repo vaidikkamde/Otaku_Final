@@ -112,7 +112,7 @@ const EventCard = props => {
                   <br />
                   <h4 className="modal-days">{ReactHtmlParser(props.eventDate)}</h4>
                   <h4 className="modal-timings">{props.eventTimings}</h4>
-                  <h4 className="registration-fees">
+                  <h4 className="registration-fees" style={{textAlign:"justify"}}>
                     {ReactHtmlParser(props.registrationFees)}
                   </h4>
                   <a

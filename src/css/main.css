@@ -1680,6 +1680,7 @@ nav ul li a {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   font-family: "Poppins", sans-serif;
+  width: 31rem;
 }
 
 .eventModal .close-btn {
