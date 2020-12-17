@@ -8,6 +8,7 @@ import Review from "../components/index/review"
 import Team from "../components/index/team"
 import SocialWork from "../components/index/socialWork"
 import Achivements from "../components/index/achivements"
+import Sponsors from "../components/index/sponsors"
 import useWindowDimensions from "../components/widthHook"
 const IndexPage = props => {
   const { height, width } = useWindowDimensions()
@@ -20,6 +21,7 @@ const IndexPage = props => {
         <AboutUS />
         <Achivements/>
         <Review />
+        <Sponsors/>
         <Team />
         <SocialWork />
       </>
