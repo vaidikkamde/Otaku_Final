@@ -13,6 +13,18 @@
 // },
 const eventsArray = [
   {
+    eventPoster:"yts_talk.jpeg",
+    registrationDeadline:"December 21 2020",
+    registrationLink:"https://www.instagram.com/otaku_org/",
+    eventName:"YTS TALKS Episode 4",
+    eventDescription:'<p>Student organization OTAKU under the aegis of Division of Student Welfare, Lovely Professional University is organizing a YTS TALKS episode 4 with Rohini (Actress, Big Boss season-3 contestant, YouTuber)</p><p><br />Date - 21st Dec<br />Time - from 5:30 pm<br />Live at - otaku_org (instagram)</p>',
+    eventStartDate:"December 21 2020",
+    eventEndDate:"December 22 2020",
+    eventDate:"Dec 21 2020",
+    eventTimings:"Live from 5:30 PM",
+    registrationFees:'<p>Join Us At --- <a title="Instagram" href="https://www.instagram.com/otaku_org/" target="_blank" rel="noopener">@otaku_org On Instagram</a></p>'
+  },
+  {
     eventPoster: "self_worth.jpeg",
     registrationDeadline: "December 14 2020",
     registrationLink: "https://www.shortto.com/fmcourse",
